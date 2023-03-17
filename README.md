@@ -3,7 +3,7 @@
 Here is a list of HTML files generated using ChatGPT or GPT with the generated Tailwind.css.
 
 Prompt Template (Inside {} is a variable that is replaced with the actual value by your input.)
-```
+
 First, generate text for the page.
 ```
 [Prompt]
