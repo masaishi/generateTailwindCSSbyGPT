@@ -2,6 +2,77 @@
 
 Here is a list of HTML files generated using ChatGPT or GPT with the generated Tailwind.css.
 
+Prompt Template (Inside {} is a variable that is replaced with the actual value by your input.)
+```
+First, generate text for the page.
+```
+[Prompt]
+Please be more specific about your [Business Idea] using [New Technology] and be specific about all [Information Needed].
+
+[New Technology]
+{Get technology name from https://ej-article.vercel.app/githubs}
+
+[Business Idea]
+{Get business idea from same page, above link}
+
+
+[Information Needed]
+1. Home Page:
+    - Catchy headline and subheadline
+    - Brief overview of the application
+    - Call-to-Action (CTA) button (e.g., "Download Now" or "Get Started")
+2. About Us:
+    - Company mission, vision, and values
+    - Company history and milestones
+    - Team members (management, founders, key personnel)
+    - Partnerships, collaborations, and affiliations
+3. Application Overview:
+    - Detailed description of your application
+    - Key features and benefits
+    - Unique selling points (USPs)
+    - Supported platforms (desktop, mobile, web)
+    - Pricing and plans (if applicable)
+4. How It Works:
+    - Step-by-step guide to using the application
+    - Video tutorials or demos
+    - Screenshots or illustrations of the application interface
+5. Use Cases or Case Studies:
+    - Real-life examples of how your application is used
+    - Customer success stories
+    - Testimonials from satisfied users
+6. Integrations and Compatibility:
+    - Supported integrations with other popular software or platforms
+    - System requirements and compatibility information
+7. Resources and Support:
+    - Knowledge base or help center
+    - FAQ section
+    - Video tutorials, webinars, and how-to guides
+    - Blog or news section for updates and industry insights
+8. Contact Us:
+    - Contact form for inquiries, support requests, or feedback
+    - Email address, phone number, and physical address
+    - Social media links
+    - Business hours and time zone
+9. Security and Privacy:
+    - Data security measures and certifications
+    - Privacy policy
+    - Terms of service or end-user license agreement (EULA)
+10. Download or App Store Links:
+    - Direct download links or app store buttons for Android, iOS, or other supported platforms
+```
+
+Then, generate HTML with Tailwind.css.
+```
+[Prompt]
+Please make an awesome design site built with Tailwind CSS refer to the [Text].
+When creating a page, if text information is missing, write additional text.
+
+[Text]
+{Previous Text}
+
+[HTML Output]
+```
+
 ## User ChatGPT api
 - **[chatGPT_01.html](https://masaishi.github.io/generateTailwindCSSbyGPT/chatGPT_01.html)**
 - **[chatGPT_02.html](https://masaishi.github.io/generateTailwindCSSbyGPT/chatGPT_02.html)**
