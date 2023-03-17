@@ -1,0 +1,283 @@
+<!-- 0.88 temp -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet">
+        <link href="{{ asset('css/tailwind.output.css') }}" rel="stylesheet">
+        <title>DataMonitor</title>
+    </head>
+
+    <body>
+
+        <div class="gradient-red-blue">
+            <!-- Search bar: https://tailwindcss.com/course/build-a-search-bar -->
+            <div class="h-20">
+                <div class="flex items-center h-full ml-64 mr-64">
+                    <div class="flex-grow hidden sm:flex">
+                        <div class="w-64 flex justify-start items-stretch">
+                            <input class="appearance-none w-full h-full bg-transparent border-none py-0 pl-4 pr-10 text-gray-600 leading-tight focus:outline-none"
+                                type="text" placeholder="Search Here">
+                            <div class="pl-4 pr-4 flex items-center justify-center text-gray-700 bg-gray-200">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                    <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end ml-auto">
+                        <a href="#" class="px-4 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Log
+                            In</a>
+                        <button class="relative inline-flex items-center px-4 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">
+                            <span>Get Started</span>
+                            <span class="ml-2 hidden sm:ml-3 sm:flex-shrink-0">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero: https://tailwindcss.com/course/build-a-landing-page -->
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="bg-white py-20 flex flex-col">
+                    <div class="flex-shrink-0 sm:flex sm:items-center sm:justify-between">
+                        <h2 class="text-4xl font-bold leading-10 tracking-tight sm:text-5xl sm:leading-none md:text-6xl">
+                            Your <span class="px-4 py-1 bg-indigo-600 text-white rounded-full font-semibold">one-stop</span> data analysis solution
+                        </h2>
+                        <p class="mt-3 p-0 sm:mt-8 sm:max-w-xl sm:mx-auto text-lg leading-7 text-gray-600">
+                            <span class="block mb-2">DataMonitor offers advanced data analysis, real-time monitoring, dashboard reporting, and PII/NPI detection so you can optimize data quality and security.</span>
+                            <span class="block">Customize your plan and sign up today!</span>
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:flex-row-reverse">
+                            <div class="rounded-md shadow">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">View Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 sm:flex sm:mt-0 sm:justify-center lg:justify-start">
+                        <div class="rounded-md shadow sm:mt-4">
+                            <a href="#" class="flex items-center w-full px-6 py-4 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out">
+                                <svg class="w-10 h-10 mr-4 fill-current text-indigo-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M2 3C1.44772 3 1 3.44772 1 4V16C1 16.5523 1.44772 17 2 17H18C18.5523 17 19 16.5523 19 16V4C19 3.44772 18.5523 3 18 3H2ZM3.70711 5.29289L4.41421 4.58579C4.73624 4.26376 5.26376 4.26376 5.58579 4.58579L6.29289 5.29289C6.61492 5.61593 6.61492 6.14346 6.29289 6.46449L5.58579 7.17158C5.26376 7.49362 4.73624 7.49362 4.41421 7.17158L3.70711 6.46449C3.38508 6.14346 3.38508 5.61593 3.70711 5.29289ZM9.5 5C9.22386 5 9 5.22386 9 5.5V10.5C9 10.7761 9.22386 11 9.5 11H14.5C14.7761 11 15 10.7761 15 10.5V5.5C15 5.22386 14.7761 5 14.5 5H9.5ZM16.7071 16.2929L17.4142 15.5858C17.7364 15.2638 18.2637 15.2638 18.5858 15.5858L19.2929 16.2929C19.6149 16.6149 19.6149 17.1434 19.2929 17.4645L18.5858 18.1716C18.2637 18.4936 17.7364 18.4936 17.4142 18.1716L16.7071 17.4645C16.385 17.1434 16.385 16.6149 16.7071 16.2929ZM3.70711 9.29289L4.41421 8.58579C4.73624 8.26376 5.26376 8.26376 5.58579 8.58579L6.29289 9.29289C6.61492 9.61593 6.61492 10.1435 6.29289 10.4646L5.58579 11.1716C5.26376 11.4936 4.73624 11.4936 4.41421 11.1716L3.70711 10.4646C3.38508 10.1435 3.38508 9.61593 3.70711 9.29289ZM13.5 9.5C13.2239 9.5 13 9.72386 13 10C13 10.2761 13.2239 10.5 13.5 10.5H16.5C16.7761 10.5 17 10.2761 17 10C17 9.72386 16.7761 9.5 16.5 9.5H13.5ZM16.7071 12.2929L17.4142 11.5858C17.7364 11.2638 18.2637 11.2638 18.5858 11.5858L19.2929 12.2929C19.6149 12.6149 19.6149 13.1435 19.2929 13.4646L18.5858 14.1716C18.2637 14.4936 17.7364 14.4936 17.4142 14.1716L16.7071 13.4646C16.385 13.1435 16.385 12.6149 16.7071 12.2929Z" />
+                                </svg>
+                                <div class="mt-2">
+                                    <h4 class="text-lg leading-6 font-medium text-gray-900">Simple Integration</h4>
+                                    <p class="mt-2 text-base leading-6 text-gray-500 max-w-xl">Offers the benefits of advanced data analysis with the convenience of simple integration and customization.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mt-4 sm:mt-0 rounded-md shadow sm:ml-4">
+                            <a href="#" class="flex items-center w-full px-6 py-4 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out">
+                                <svg class="w-10 h-10 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <div class="mt-2">
+                                    <h4 class="text-lg leading-6 font-medium text-gray-900">PII/NPI Detection</h4>
+                                    <p class="mt-2 text-base leading-6 text-gray-500 max-w-xl">Protect your data with advanced PII/NPI detection and monitoring capabilities.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mt-4 rounded-md shadow sm:mt-0 sm:ml-4">
+                            <a href="#" class="flex items-center w-full px-6 py-4 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out">
+                                <svg class="w-10 h-10 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <div class="mt-2">
+                                    <h4 class="text-lg leading-6 font-medium text-gray-900">Fast & Secure</h4>
+                                    <p class="mt-2 text-base leading-6 text-gray-500 max-w-xl">Using the latest Python and cloud library, DataMonitor offers efficient, reliable data analysis and processing.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plans: https://tailwindcss.com/course/build-a-pricing-page -->
+            <div class="py-20">
+                <div class="container mx-auto px-4 md:px-6">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/4 lg:pr-12">
+                            <h2 class="text-2xl lg:text-4xl font-bold tracking-tight sm:leading-none md:text-6xl">Plans & Pricing</h2>
+                        </div>
+                        <div class="mt-10 sm:flex sm:mt-0">
+                            <div class="shadow overflow-hidden sm:rounded-lg">
+                                <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Basic Plan
+                                    </h3>
+                                    <div class="mt-2">
+                                        <p class="text-sm leading-5 text-gray-500">Offers the benefits of data analysis with the convenience of simple integration and customization.</p>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-5 sm:px-6">
+                                    <dl>
+                                        <dt class="text-sm leading-5 font-medium text-gray-500">
+                                            Automatic data formatting and reading
+                                        </dt>
+                                        <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                            Easily and quickly transform your raw data into the format you need.
+                                        </dd>
+                                        <dt class="text-sm leading-5 font-medium text-gray-500">
+                                            Dashboard reporting
+                                        </dt>
+                                        <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                            // todo
+                                        </dd>
+                                        <dt class="text-sm leading-5 font-medium text-gray-500">
+                                            PII/NPI detection
+                                        </dt>
+                                        <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                            // todo
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="px-4 py-5 border-t border-gray-200 sm:px-6">
+                                    <h4 class="text-xl lg:text-2xl font-semibold tracking-tight text-primary-500">
+                                        Get Started Now!
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="mt-10 sm:mt-0 sm:ml-12">
+                                <div class="shadow overflow-hidden sm:rounded-lg">
+                                    <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                            Premium Plan
+                                        </h3>
+                                        <div class="mt-2">
+                                            <p class="text-sm leading-5 text-gray-500">Get all the features and benefits of the Basic Plan plus advanced data profiling capabilities, monitoring and alerts, and email notifications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-5 sm:px-6">
+                                        <dl>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                All Basic Plan features
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Automatically format and read your data, view dashboard reporting, and receive PII/NPI detection to protect your information.
+                                            </dd>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Advanced data profiling capabilities
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                // todo
+                                            </dd>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Monitoring and alerts
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Real-time monitoring and alerts allow you to stay updated on the status of your data.
+                                            </dd>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Email notifications
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Keep your team up to date with email notifications. Customize your notifications to your specific needs and preferences.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="px-4 py-5 border-t border-gray-200 sm:px-6">
+                                        <h4 class="text-xl lg:text-2xl font-semibold tracking-tight text-primary-500">
+                                            Get Started Now!
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-10 sm:mt-0 sm:ml-12">
+                                <div class="shadow overflow-hidden sm:rounded-lg">
+                                    <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                                        <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                            Enterprise Plan
+                                        </h3>
+                                        <div class="mt-2">
+                                            <p class="text-sm leading-5 text-gray-500">// todo</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-4 py-5 sm:px-6">
+                                        <dl>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                All Basic and Premium Plan features
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Automatically format and read your data, view dashboard reporting, receive PII/NPI detection, and get advanced data profiling capabilities with real-time monitoring and alerts.
+                                            </dd>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Customized integrations
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Increase efficiency and save time with customized integrations with the services you use everyday.
+                                            </dd>
+                                            <dt class="text-sm leading-5 font-medium text-gray-500">
+                                                Email notifications
+                                            </dt>
+                                            <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+                                                Keep your team up to date with email notifications. Customize your notifications to your specific needs and preferences.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="px-4 py-5 border-t border-gray-200 sm:px-6">
+                                        <h4 class="text-xl lg:text-2xl font-semibold tracking-tight text-primary-500">
+                                            Get Started Now!
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer: https://tailwindcss.com/course/build-a-footer -->
+            <div class="container mx-auto px-4">
+                <hr class="my-6 border-2 rounded-full border-gray-200">
+                <div class="flex md:justify-between py-6 md:flex-row-reverse">
+                    <div class="text-center md:text-left">
+                        <h5 class="text-xl leading-6 font-medium text-gray-900">About DataMonitor</h5>
+                        <p class="mt-2 text-sm leading-5 text-gray-500 mx-2">
+                            DataMonitor offers data analysis, real-time monitoring, dashboard reporting, and PII/NPI detection so you can optimize data quality and security.
+                        </p>
+                    </div>
+                    <div class="mt-10 md:mt-0">
+                        <a href="https://twitter.com/datamonitor_ai" class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/datamonitor.ai" class="ml-6 text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/datamonitor.ai/" class="ml-6 text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/datamonitor-ai" class="ml-6 text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
