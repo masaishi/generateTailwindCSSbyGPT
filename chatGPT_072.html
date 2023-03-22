@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FLUTE Commerce - The Ultimate Platform for Personalized E-commerce</title>
+    <style>
+        .banner-img {
+            background-image: url('https://source.unsplash.com/random/1200x600/?marketing');
+            height: 600px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .feature-img {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-8 w-8" src="https://source.unsplash.com/random/50x50/?tech" alt="FLUTE logo">
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Docs</a>
+
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="p-1 border-2 border-transparent text-gray-600 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">
+                            <span class="sr-only">View notifications</span>
+                            <!-- Heroicon name: bell -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </button>
+
+                        <div class="ml-3 relative">
+                            <div>
+                                <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                                    <img class="h-8 w-8 rounded-full" src="https://source.unsplash.com/random/30x30/?user" alt="">
+                                </button>
+                            </div>
+
+                            <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+                                <div class="py-1 rounded-md bg-white shadow-xs">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
+
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Mobile menu button -->
+                    <button class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                          Heroicon menu
+
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <!--
+                          Heroicon x
+
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+          Mobile menu, toggle classes based on menu state.
+
+          Open: "block", closed: "hidden"
+        -->
+        <div class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 sm:px-3">
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Docs</a>
+
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-700">
+                <div class="flex items-center px-5">
+                    <div class="flex-shrink-0">
+                        <img class="h-10 w-10 rounded-full" src="https://source.unsplash.com/random/50x50/?user" alt="">
+                    </div>
+                    <div class="ml-3">
+                        <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+                        <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+                    </div>
+                </div>
+                <div class="mt-3 px-2">
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-100 hover:bg-gray-700">Profile</a>
+
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-100 hover:bg-gray-700">Settings</a>
+
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-100 hover:bg-gray-700">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Header-->
+    <div class="banner-img flex justify-center items-center">
+        <div class="text-center p-8 md:p-12 text-white">
+            <h1 class="text-4xl sm:text-6xl font-semibold uppercase leading-none mb-2">FLUTE Commerce</h1>
+            <p class="text-xl sm:text-2xl mb-6 uppercase">The Ultimate Platform for Personalized E-commerce</p>
+            <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow hover:bg-gray-100 hover:text-gray-900 transition duration-150 ease-in-out">Start Your Free Trial</a>
+        </div>
+    </div>
+
+
+    <!--Features-->
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-900 text-center mb-6">Features</h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto md:flex md:space-x-10">
+            <!--Feature 1-->
+            <div class="md:flex-1">
+                <div class="bg-white px-6 py-8 rounded-lg shadow-lg">
+                    <div class="feature-img rounded-full h-20 w-20 flex items-center justify-center bg-gray-100 mb-6 mx-auto">
+                        <!-- Heroicon name: globe-alt -->
+                        <svg class="h-10 w-10 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a8.962 8.962 0 01-3 3.87M16.94 19.94a9 9 0 11-13.87 0M2 12h6M22 12h-6M18.37 5.12a9 9 0 014.26 3.51M3.37 8.63a9 9 0 014.26-3.51M6 18h12"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl mb-3 font-semibold">Fast and Accurate Models</h3>
+                    <p class="text-gray-700 mb-4">FLUTE Commerce provides e-commerce companies with fast and accurate machine learning models that can help them provide personalized customer experiences.</p>
+                </div>
+            </div>
+
+            <!--Feature 2-->
+            <div class="md:flex-1">
+                <div class="bg-white px-6 py-8 rounded-lg shadow-lg">
+                    <div class="feature-img rounded-full h-20 w-20 flex items-center justify-center bg-gray-100 mb-6 mx-auto">
+                        <!-- Heroicon name: scale -->
+                        <svg class="h-10 w-10 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4L4 9m0 0l5 5m-5-5h14a2 2 0 012 2v7a2 2 0 01-2 2H3a2 2 0 01-2-2v-7a2 2 0 012-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl mb-3 font-semibold">Secure Data Privacy</h3>
+                    <p class="text-gray-700 mb-4">FLUTE Commerce uses federated learning to train models on data that is owned by individual customers and not shared among e-commerce outlets, providing enhanced data privacy.</p>
+                </div>
+            </div>
+
+            <!--Feature 3-->
+            <div class="md:flex-1">
+                <div class="bg-white px-6 py-8 rounded-lg shadow-lg">
+                    <div class="feature-img rounded-full h-20 w-20 flex items-center justify-center bg-gray-100 mb-6 mx-auto">
+                        <!-- Heroicon name: lightning-bolt -->
+                        <svg class="h-10 w-10 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl mb-3 font-semibold">Multi-Node Orchestration</h3>
+                    <p class="text-gray-700 mb-4">FLUTE Commerce enables multi-GPU and multi-node orchestration, so you can scale your simulations to handle large amounts of data with ease.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="#" class="bg-gray-800 text-white font-semibold py-2 px-4 border border-gray-700 rounded hover:bg-gray-700 transition duration-150 ease-in-out">Learn More</a>
+        </div>
+    </div>
+
+
+    <!--Call to Action-->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold text-white mb-4">Ready to take your E-commerce business to the next level?</h2>
+        <p class="text-gray-300 mb-6">Sign up for a free trial of FLUTE Commerce today and start providing personalized customer experiences while safeguarding customer data privacy.</p>
+        <a href="#" class="bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow hover:bg-gray-100 hover:text-gray-900 transition duration-150 ease-in-out">Start Your Free Trial</a>
+    </div>
+
+
+    <!--Footer-->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <p class="text-gray-400">&copy; 2021 FLUTE Commerce. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-gray-400 hover:text-gray-300 ml-4"><span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M21 2H3a2 2 0 00-2 2v16a2 2 0 002 2h9.32v-7.5h-2.53v-2.92h2.53v-2.12c0-2.5 1.52-3.87 3.75-3.87 1.08 0 2.01.08 2.28.12v2.6l-1.56.001c-1.23 0-1.47.58-1.47 1.44v1.88h2.95l-.38 2.92h-2.57v7.5h5.01a2 2 0 002-2V4a2 2 0 00-2-2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-300 ml-4"><span class="sr-only">Twitter</span                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M8.584 20c7.301 0 11.29-6.042 11.29-11.29 0-.172 0-.344-.012-.517a8.09 8.09 0 002.001-2.072 8.192 8.192 0 01-2.337.641 4.094 4.094 0 001.777-2.257 8.187 8.187 0 01-2.606 1 4.084 4.084 0 00-6.968 3.72 11.621 11.621 0 01-8.445-4.282 4.082 4.082 0 001.266 5.449A4.033 4.033 0 013.3 6.863v.051a4.085 4.085 0 003.277 4.007 4.102 4.102 0 01-1.844.07 4.086 4.086 0 003.816 2.833 8.194 8.194 0 01-5.085 1.746A8.145 8.145 0 010 12.784a11.636 11.636 0 006.305 1.846" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

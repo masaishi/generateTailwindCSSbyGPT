@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FLUTE Commerce - Federated Learning for Personalized E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10">
+        <div class="flex items-center flex-shrink-0 mr-6">
+            <img src="images/logo.png" alt="FLUTE Commerce Logo" class="h-10">
+            <span class="font-bold text-xl text-gray-900 tracking-tight ml-4">FLUTE Commerce</span>
+        </div>
+        <div class="block lg:hidden">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-black hover:border-black">
+                <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h12M4 10h12M4 14h12"/></svg>
+            </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden" id="nav-menu">
+            <div class="text-md lg:flex-grow">
+                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-black mr-4">
+                    Home
+                </a>
+                <a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-black mr-4">
+                    Features
+                </a>
+                <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-black mr-4">
+                    About
+                </a>
+                <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-black">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-gray-100 to-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center -mx-4">
+                <div class="lg:w-1/2 px-4">
+                    <h1 class="text-4xl font-bold mb-6 leading-tight">Personalization Without Privacy Compromise</h1>
+                    <p class="text-gray-600 mb-8 leading-relaxed">FLUTE Commerce is the first federated learning platform designed specifically for e-commerce. It allows companies to build machine learning models that provide personalized customer experiences without compromising privacy. Get started today and revolutionize the way you engage with your customers.</p>
+                    <div class="flex items-center">
+                        <a href="#contact" class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-bold py-4 px-8 shadow-lg uppercase tracking-wider">Get Started</a>
+                        <p class="text-gray-600 ml-4">or <a href="#features" class="underline">learn more about our features</a></p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 px-4">
+                    <img src="https://source.unsplash.com/random/700x500/?ecommerce" alt="E-commerce Image" class="rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold leading-tight mb-12 text-center">Features</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="lg:w-1/3 mb-8 px-4">
+                    <div class="rounded-lg overflow-hidden shadow-lg p-6">
+                        <svg class="h-8 w-8 text-indigo-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M6 14l8-5-8-5v10z"/></svg>
+                        <h3 class="text-xl font-bold mb-2">Multi-Node Orchestration</h3>
+                        <p class="text-gray-600 leading-relaxed">FLUTE Commerce offers multi-node orchestration, allowing you to train your models on multiple machines for significantly faster training times.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 mb-8 px-4">
+                    <div class="rounded-lg overflow-hidden shadow-lg p-6">
+                        <svg class="h-8 w-8 text-indigo-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M5 5v10l8-5-8-5z"/></svg>
+                        <h3 class="text-xl font-bold mb-2">Differential Privacy</h3>
+                        <p class="text-gray-600 leading-relaxed">FLUTE Commerce allows you to train your models with local or global differential privacy, ensuring that individual customer data is never compromised.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 mb-8 px-4">
+                    <div class="rounded-lg overflow-hidden shadow-lg p-6">
+                        <svg class="h-8 w-8 text-indigo-500 mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 100-16 8 8 0 000 16z"/></svg>
+                        <h3 class="text-xl font-bold mb-2">Model Quantization</h3>
+                        <p class="text-gray-600 leading-relaxed">FLUTE Commerce supports model quantization, allowing you to reduce the size of your models for faster inference times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold leading-tight mb-12 text-center">About FLUTE Commerce</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="lg:w-1/2 px-4 mb-8">
+                    <p class="text-gray-600 leading-relaxed mb-8">At FLUTE Commerce, we are passionate about helping e-commerce companies provide personalized experiences for their customers. Our federated learning platform allows companies to build machine learning models that provide personalized recommendations, search results, and more, while maintaining the privacy of individual customer data.</p>
+                    <p class="text-gray-600 leading-relaxed">Our team of experts has years of experience working with machine learning and federated learning, and we are committed to providing the best possible platform for our customers. Whether you are just getting started with machine learning or looking to take your e-commerce experience to the next level, FLUTE Commerce is the right choice for you.</p>
+                </div>
+                <div class="lg:w-1/2 px-4 mb-8">
+                    <img src="https://source.unsplash.com/random/700x500/?office" alt="Office Image" class="rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <div class="lg:w-1/2 px-4 mb-8">
+                    <h2 class="text-3xl font-bold mb-12 leading-tight text-white">Get In Touch</h2>
+                    <form action="#" method="POST">
+                        <div class="flex flex-wrap mb-6">
+                            <div class="w-full lg:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-first-name">
+                                    First Name
+                                </label>
+                                <input class="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="John">
+                            </div>
+                            <div class="w-full lg:w-1/2 px-3">
+                                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-last-name">
+                                    Last Name
+                                </label>
+                                <input class="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-email">
+                                    Email Address
+                                </label>
+                                <input class="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="johndoe@example.com">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-message">
+                                    Message
+                                </label>
+                                <textarea class="appearance-none block w-full bg-gray-700 text-gray-300 border border-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-message" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <button class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full font-bold py-4 px-8 shadow-lg uppercase tracking-wider" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="lg:w-1/2 px-4">
+                    <h2 class="text-3xl font-bold mb-12 leading-tight text-white">Our Location</h2>
+                    <div class="rounded overflow-hidden shadow-lg bg-gray-900 text-gray-100 p-6">
+                        <p class="text-lg mb-4">FLUTE Commerce</p>
+                        <p class="text-gray-500 mb-4">123 Main St</p>
+                        <p class="text-gray-500 mb-4">Los Angeles, CA 90012</p>
+                        <p class="text-gray-500">contact@flutecommerce.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-600 text-center">&copy; 2022 FLUTE Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

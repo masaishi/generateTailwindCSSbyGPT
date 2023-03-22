@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Minimalist and sleek color scheme design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>SemDeDup - Data-Efficient Learning Through Semantic Deduplication</title>
+    <style>
+        /* Background color */
+        body {
+            background-color: #F7FAFC;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            background-color: #2D3748;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        .navbar a {
+            color: #FFFFFF;
+            margin-left: 1.5rem;
+        }
+        
+        /* Main section styles */
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 0;
+        }
+        
+        .main h1 {
+            font-size: 3rem;
+            color: #2D3748;
+            margin-bottom: 2rem;
+        }
+        
+        .main p {
+            font-size: 1.5rem;
+            color: #4A5568;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        .main img {
+            margin-bottom: 2rem;
+        }
+        
+        /* Features section styles */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem;
+            background-color: #EDF2F7;
+        }
+        
+        .feature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+        }
+        
+        .feature img {
+            margin-bottom: 1rem;
+        }
+        
+        .feature h2 {
+            font-size: 2rem;
+            color: #2D3748;
+            margin-bottom: 1rem;
+        }
+        
+        .feature p {
+            font-size: 1.25rem;
+            color: #4A5568;
+            text-align: center;
+        }
+        
+        /* Pricing section styles */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 4rem;
+        }
+        
+        .plan {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            background-color: #FFFFFF;
+            margin: 1rem;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .plan h2 {
+            font-size: 2rem;
+            color: #2D3748;
+            margin-bottom: 1rem;
+        }
+        
+        .plan p {
+            font-size: 1.25rem;
+            color: #4A5568;
+            margin-bottom: 1rem;
+        }
+        
+        .plan button {
+            background-color: #2D3748;
+            color: #FFFFFF;
+            border: none;
+            padding: 1rem;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .plan button:hover {
+            background-color: #1A202C;
+        }
+        
+        /* FAQs section styles */
+        .faqs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            background-color: #E2E8F0;
+        }
+        
+        .faqs h2 {
+            font-size: 2rem;
+            color: #2D3748;
+            margin-bottom: 2rem;
+        }
+        
+        .faq {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        
+        .faq h3 {
+            font-size: 1.5rem;
+            color: #4A5568;
+            margin-bottom: 1rem;
+        }
+        
+        .faq p {
+            font-size: 1.25rem;
+            color: #4A5568;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>SemDeDup</h1>
+        <nav>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">FAQs</a>
+        </nav>
+    </div>
+    
+    <!-- Main section -->
+    <div class="main">
+        <h1>Data-Efficient Learning Through Semantic Deduplication</h1>
+        <p>SemDeDup is a new method for data-efficient learning through semantic deduplication, which can remove semantically similar but not identical data pairs to make models learn faster with less data.</p>
+        <img src="https://source.unsplash.com/random/600x400/?technology" alt="SemDeDup example">
+    </div>
+    
+    <!-- Features section -->
+    <div class="features">
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/150x150/?code" alt="Code">
+            <h2>Efficient Learning</h2>
+            <p>SemDeDup can remove 50% of the data with minimal performance loss, effectively halving training time.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/150x150/?data" alt="Data">
+            <h2>Improved Performance</h2>
+            <p>It also improves performance out of distribution and provides more efficiency gains compared to prior approaches.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/150x150/?ai" alt="AI">
+            <h2>Pre-trained Embeddings</h2>
+            <p>SemDeDup uses pre-trained embeddings to identify and remove semantic duplicates in web-scale datasets, thereby preserving performance and speeding up learning.</p>
+        </div>
+    </div>
+    
+    <!-- Pricing section -->
+    <div class="pricing">
+        <div class="plan">
+            <h2>Free</h2>
+            <p>For personal and non-commercial use.</p>
+            <p>Includes:</p>
+            <ul>
+                <li>100,000 data points</li>
+                <li>10,000 requests per month</li>
+                <li>Basic support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Standard</h2>
+            <p>For small businesses and startups.</p>
+            <p>Includes:</p>
+            <ul>
+                <li>1,000,000 data points</li>
+                <li>100,000 requests per month</li>
+                <li>Email support</li>
+            </ul>
+            <button>Sign Up</button>
+        </div>
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <p>For large organizations and enterprises.</p>
+            <p>Includes:</p>
+            <ul>
+                <li>10,000,000 data points</li>
+                <li>1,000,000 requests per month</li>
+                <li>24/7 support</li>
+            </ul>
+            <button>Contact Us</button>
+        </div>
+    </div>
+    
+    <!-- FAQs section -->
+    <div class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>What is SemDeDup?</h3>
+            <p>SemDeDup is a new method for data-efficient learning through semantic deduplication, which can remove semantically similar but not identical data pairs to make models learn faster with less data.</p>
+        </div>
+        <div class="faq">
+            <h3>How does SemDeDup work?</h3>
+            <p>SemDeDup uses pre-trained embeddings to identify and remove semantic duplicates in web-scale datasets, thereby preserving performance and speeding up learning.</p>
+        </div>
+        <div class="faq">
+            <h3>What are the benefits of using SemDeDup?</h3>
+            <p>SemDeDup can remove 50% of the data with minimal performance loss, effectively halving training time. It also improves performance out of distribution and provides more efficiency gains compared to prior approaches.</p>
+        </div>
+    </div>
+</body>
+</html>

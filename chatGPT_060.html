@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RS-CD技術を活用した精密農業サービス</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+    <header class="flex justify-between items-center py-8 px-16">
+        <img src="https://source.unsplash.com/random/50x50/?logo" alt="ロゴ">
+        <nav class="text-gray-700 text-lg">
+            <ul class="flex justify-between">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">特徴</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-gray-100">
+        <div class="px-16 py-8">
+            <h2 class="text-3xl font-bold mb-8">ギャラリー</h2>
+            <div class="flex justify-between flex-wrap">
+                <img src="https://source.unsplash.com/random/400x250/?landscape" alt="風景">
+                <img src="https://source.unsplash.com/random/400x250/?landscape" alt="風景">
+                <img src="https://source.unsplash.com/random/400x250/?landscape" alt="風景">
+            </div>
+        </div>
+    </section>
+
+    <section class="px-16 py-12">
+        <h2 class="text-3xl font-bold mb-8">特徴</h2>
+        <div class="flex justify-between">
+            <div class="w-1/3">
+                <h3 class="text-xl font-bold mb-4">高精度の農業データ</h3>
+                <p class="text-gray-700">RS-CD技術により、農地の生育状況や健康状態を正確に把握できます。</p>
+            </div>
+            <div class="w-1/3">
+                <h3 class="text-xl font-bold mb-4">タイムリーな情報</h3>
+                <p class="text-gray-700">農地の変化をリアルタイムで検出し、的確な農業施策に反映できます。</p>
+            </div>
+            <div class="w-1/3">
+                <h3 class="text-xl font-bold mb-4">経済的なコスト</h3>
+                <p class="text-gray-700">無作為に施肥や農薬をまくことを防ぎ、適正な施策でコストを抑えることができます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="px-16">
+            <h2 class="text-3xl font-bold mb-8">サービス</h2>
+            <div class="flex justify-between">
+                <div class="w-1/3">
+                    <img src="https://source.unsplash.com/random/200x200/?drone" alt="ドローン">
+                    <h3 class="text-xl font-bold my-4">RS-CD技術の導入支援</h3>
+                    <p class="text-gray-700">農地画像の撮影からRS-CD技術の導入まで、全てのプロセスをサポートします。</p>
+                </div>
+                <div class="w-1/3">
+                    <img src="https://source.unsplash.com/random/200x200/?data" alt="データ">
+                    <h3 class="text-xl font-bold my-4">多角的なデータ分析</h3>
+                    <p class="text-gray-700">光学画像だけでなく、レーダー画像も解析可能です。</p>
+                </div>
+                <div class="w-1/3">
+                    <img src="https://source.unsplash.com/random/200x200/?farmer" alt="農家">
+                    <h3 class="text-xl font-bold my-4">ドローンによる撮影サービス</h3>
+                    <p class="text-gray-700">ドローンを使用した撮影、解析サービスを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-16 py-12">
+        <h2 class="text-3xl font-bold mb-8">お問い合わせ</h2>
+        <div class="flex justify-between">
+            <div class="w-1/3">
+                <ul class="text-gray-700">
+                    <li>会社名： ○○株式会社</li>
+                    <li>住所： 東京都〇〇区〇〇1-1-1</li>
+                    <li>電話番号： 012-345-6789</li>
+                    <li>メールアドレス： info@xx.co.jp</li>
+                </ul>
+            </div>
+            <div class="w-2/3">
+                <form action="#" method="POST">
+                    <div class="flex mb-4">
+                        <label for="name" class="w-1/3 text-gray-700 self-center">お名前：</label>
+                        <input type="text" id="name" name="name" class="w-2/3 border border-gray-400 p-2 rounded" required>
+                    </div>
+                    <div class="flex mb-4">
+                        <label for="email" class="w-1/3 text-gray-700 self-center">メールアドレス：</label>
+                        <input type="email" id="email" name="email" class="w-2/3 border border-gray-400 p-2 rounded" required>
+                    </div>
+                    <div class="flex mb-4">
+                        <label for="message" class="w-1/3 text-gray-700 self-center">お問い合わせ内容：</label>
+                        <textarea id="message" name="message" rows="5" class="w-2/3 border border-gray-400 p-2 rounded" required></textarea>
+                    </div>
+                    <div class="flex justify-end">
+                        <input type="submit" value="送信" class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 cursor-pointer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 px-16">
+        <p>&copy; 2022 ○○株式会社 All rights reserved.</p>
+    </footer>
+</body>
+</html>

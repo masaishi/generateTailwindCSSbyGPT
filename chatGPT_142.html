@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Industrial, modern, and urban design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>UrbanBite</title>
+    <!-- Load images by different objects from unsplash -->
+    <style>
+        .hero-image {
+            background-image: url('https://source.unsplash.com/random/1200x800/?food');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+        }
+        .food-image {
+            background-image: url('https://source.unsplash.com/random/400x400/?food');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4">
+        <h1 class="text-4xl font-bold">UrbanBite</h1>
+        <nav class="space-x-4">
+            <a href="#" class="text-lg font-medium hover:text-gray-400">Menu</a>
+            <a href="#" class="text-lg font-medium hover:text-gray-400">About</a>
+            <a href="#" class="text-lg font-medium hover:text-gray-400">Contact</a>
+        </nav>
+    </header>
+    <!-- Hero section -->
+    <section class="hero-image flex flex-col justify-center items-center">
+        <h2 class="text-5xl font-bold mb-4">Food that bites back!</h2>
+        <p class="text-xl">Taste the urban life with our delicious and unique dishes.</p>
+        <a href="#" class="bg-white text-gray-900 py-2 px-6 rounded-full mt-8 hover:bg-gray-200">Order Now</a>
+    </section>
+    <!-- About section -->
+    <section class="bg-gray-800 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="food-image md:mr-8"></div>
+                <div class="text-xl md:text-left max-w-lg">
+                    <p class="mb-4">At UrbanBite, we believe that food should be an experience. Our menu is inspired by the sights, sounds, and flavors of the city, and we're constantly experimenting with new dishes and ingredients to bring you something unique and exciting.</p>
+                    <p class="mb-4">We also believe in using fresh, locally-sourced ingredients whenever possible, and we're committed to sustainability and reducing our environmental impact.</p>
+                    <a href="#" class="bg-white text-gray-900 py-2 px-6 rounded-full mt-4 hover:bg-gray-200">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Pizza Mac & Cheese</h3>
+                    <p class="mb-4">Our twist on two classic dishes. Creamy mac & cheese topped with a layer of melted mozzarella and pepperoni.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold">$12.99</span>
+                        <button class="bg-white text-gray-900 py-2 px-6 rounded-full hover:bg-gray-200">Order Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Street Tacos</h3>
+                    <p class="mb-4">Three delicious tacos served on corn tortillas with your choice of meat, cilantro, onion, and lime.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold">$9.99</span>
+                        <button class="bg-white text-gray-900 py-2 px-6 rounded-full hover:bg-gray-200">Order Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-4">Vegan Burger</h3>
+                    <p class="mb-4">A plant-based patty topped with avocado, sprouts, and a spicy aioli. Served with sweet potato fries.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold">$11.99</span>
+                        <button class="bg-white text-gray-900 py-2 px-6 rounded-full hover:bg-gray-200">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section class="bg-gray-800 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">Contact Us</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="text-xl md:text-left max-w-lg">
+                    <p class="mb-4">Have a question or comment? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
+                    <form class="flex flex-col">
+                        <label class="mb-2 font-bold" for="name">Name:</label>
+                        <input class="bg-gray-900 text-white py-2 px-4 rounded-lg mb-4" type="text" id="name" name="name" required>
+                        <label class="mb-2 font-bold" for="email">Email:</label>
+                        <input class="bg-gray-900 text-white py-2 px-4 rounded-lg mb-4" type="email" id="email" name="email" required>
+                        <label class="mb-2 font-bold" for="message">Message:</label>
+                        <textarea class="bg-gray-900 text-white py-2 px-4 rounded-lg mb-4" id="message" name="message" rows="4" required></textarea>
+                        <button class="bg-white text-gray-900 py-2 px-6 rounded-full mt-4 hover:bg-gray-200">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <p class="text-xl font-bold">UrbanBite</p>
+            <p>&copy; 2021 All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

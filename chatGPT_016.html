@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Video Super-Resolution App</title>
+</head>
+<body>
+    <nav class="bg-gray-800 px-4 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">VideoSR</a>
+            <button class="text-white focus:outline-none md:hidden">
+                <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.25C3 4.56 3.56 4 4.25 4H19.75C20.44 4 21 4.56 21 5.25C21 5.94 20.44 6.5 19.75 6.5H4.25C3.56 6.5 3 5.94 3 5.25ZM13.75 8.5C13.06 8.5 12.5 9.06 12.5 9.75C12.5 10.44 13.06 11 13.75 11H19.75C20.44 11 21 10.44 21 9.75C21 9.06 20.44 8.5 19.75 8.5H13.75ZM9.25 14.5C8.56 14.5 8 15.06 8 15.75C8 16.44 8.56 17 9.25 17H19.75C20.44 17 21 16.44 21 15.75C21 15.06 20.44 14.5 19.75 14.5H9.25ZM4.25 10.5C3.56 10.5 3 11.06 3 11.75C3 12.44 3.56 13 4.25 13H19.75C20.44 13 21 12.44 21 11.75C21 11.06 20.44 10.5 19.75 10.5H4.25Z"></path>
+                </svg>
+            </button>
+            <div class="md:block hidden">
+                <a href="#" class="text-white px-2">Home</a>
+                <a href="#" class="text-white px-2">About</a>
+                <a href="#" class="text-white px-2">Contact</a>
+                <a href="#" class="bg-white text-gray-800 font-bold rounded-full py-2 px-5 ml-4">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-gray-100 px-4 py-12">
+        <div class="max-w-screen-lg mx-auto">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">Upscale your Low-res Videos to High-res</h1>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <img src="video-upscaling.jpg" alt="Video upscaling" class="w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-8 pt-8 md:pt-0">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-8">VideoSR App</h2>
+                    <p class="text-lg text-gray-700 mb-8">With VideoSR, you can easily capture low-resolution videos and upscale them to high resolution using the latest technology. Our app leverages spatial-temporal data overfitting to accurately divide videos into chunks, reducing the number of required chunks and storage requirements while maintaining high quality and efficiency.</p>
+                    <a href="#" class="bg-yellow-400 text-gray-800 font-bold rounded-full py-2 px-5">Get VideoSR</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 px-4 py-8">
+        <div class="max-w-screen-lg mx-auto flex justify-between">
+            <p class="text-white">&copy; 2021 VideoSR</p>
+            <div>
+                <a href="#" class="text-gray-400 mr-4 hover:text-white focus:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white focus:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

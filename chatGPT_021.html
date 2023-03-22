@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>NVTabular Based Data Analytic Solution</title>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <img class="block lg:hidden h-8 w-auto" src="https://images.unsplash.com/photo-1628620269247-8199c9e68c7c" alt="NVTabular Based Data Analytic Solution Logo">
+                        <img class="hidden lg:block h-8 w-auto" src="https://images.unsplash.com/photo-1628620269247-8199c9e68c7c" alt="NVTabular Based Data Analytic Solution Logo">
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex">
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+                        <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                        <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">View notifications</span>
+                        <!-- Heroicon name: bell -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </button>
+
+                    <!-- Profile dropdown -->
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1628620269247-8199c9e68c7c" alt="">
+                            </button>
+                        </div>
+                        <!--
+                          Profile dropdown panel, show/hide based on dropdown state.
+
+                          Entering: "transition ease-out duration-100"
+                            From: "transform opacity-0 scale-95"
+                            To: "transform opacity-100 scale-100"
+                          Leaving: "transition ease-in duration-75"
+                            From: "transform opacity-100 scale-100"
+                            To: "transform opacity-0 scale-95"
+                        -->
+                        <div class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                          Heroicon name: menu
+
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!--
+                          Heroicon name: x
+
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--
+          Mobile menu, toggle classNamees based on menu state.
+
+          Menu open: "block", Menu closed: "hidden"
+        -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-5">
+                    <div class="flex-shrink-0">
+                        <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1628620269247-8199c9e68c7c" alt="">
+                    </div>
+                    <div class="ml-3">
+                        <div class="text-base font-medium text-gray-800">Tom Cook</div>
+                        <div class="text-sm font-medium text-gray-500">tom@example.com</div>
+                    </div>
+                    <button type="button" class="bg-gray-800 ml-auto flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">View notifications</span>
+                        <!-- Heroicon name: bell -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-3 px-2 space-y-1">
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Your Profile</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Settings</a>
+                    <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">
+                NVTabular Based Data Analytic Solution
+            </h1>
+            <p class="mt-3 text-base text-gray-500">
+                Accelerate your data analysis process with our cutting-edge feature engineering solution.
+            </p>
+        </div>
+    </header>
+
+    <!-- Features section -->
+    <section class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <h2 class="text-xl font-medium text-gray-900">Features</h2>
+                <div class="mt-4">
+                    <ul class="list-disc pl-4">
+                        <li class="text-gray-700 mb-3">Multi-GPU based feature engineering on terabyte-scale datasets</li>
+                        <li class="text-gray-700 mb-3">Integration with existing libraries such as Dask-cuDF and Triton Inference Server</li>
+                        <li class="text-gray-700 mb-3">Pre-processing of large volumes of data in real-time</li>
+                        <li class="text-gray-700">Predictive model training using terabyte-scale datasets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <h2 class="text-xl font-medium text-gray-900">Our Pricing</h2>
+                <div class="mt-4 flex justify-between">
+                    <div class="bg-blue-100 p-6 rounded-lg shadow-xs w-80">
+                        <h3 class="text-lg font-semibold text-gray-900">Basic</h3>
+                        <div class="mt-4 flex justify-between items-baseline">
+                            <p class="text-gray-700 text-3xl font-bold">$99</p>
+                            <p class="text-gray-500">/month</p>
+                        </div>
+                        <ul class="text-gray-700 mt-4 space-y-1">
+                            <li>Up to 5 terabytes of data</li>
+                            <li>Single-GPU feature engineering</li>
+                            <li>Real-time data processing up to 10,000 records/second</li>
+                            <li>Predictive model training on up to 5 terabytes of data</li>
+                        </ul>
+                        <div class="mt-6">
+                            <button type="button" class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto">
+                                Buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-lg shadow-xs w-80">
+                        <h3 class="text-lg font-semibold text-gray-900">Pro</h3>
+                        <div class="mt-4 flex justify-between items-baseline">
+                            <p class="text-gray-700 text-3xl font-bold">$199</p>
+                            <p class="text-gray-500">/month</p>
+                        </div>
+                        <ul class="text-gray-700 mt-4 space-y-1">
+                            <li>Up to 10 terabytes of data</li>
+                            <li>Multi-GPU feature engineering</li>
+                            <li>Real-time data processing up to 100,000 records/second</li>
+                            <li>Predictive model training on up to 10 terabytes of data</li>
+                        </ul>
+                        <div class="mt-6">
+                            <button type="button" class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:w-auto">
+                                Buy now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                <h2 class="text-xl font-medium text-gray-900">Contact Us</h2>
+                <p class="text-gray-700 mt-4">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+                <form class="mt-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
+                            <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
+                            <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <div class="mt-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <div class="mt-1">
+                            <textarea id="message" name="message" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html</html>

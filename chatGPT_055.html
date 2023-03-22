@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>グルメマッチング</title>
+</head>
+<body>
+    <header class="bg-gray-900 text-white p-4">
+        <nav class="flex justify-between items-center">
+            <div class="text-xl font-bold">グルメマッチング</div>
+            <ul class="flex space-x-4">
+                <li><a href="#">新規投稿</a></li>
+                <li><a href="#">グルメマップ</a></li>
+                <li><a href="#">ランキング</a></li>
+                <li><a href="#">マイページ</a></li>
+                <li><a href="#">検索</a></li>
+                <li><a href="#">新着情報</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto">
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">ログインページ</h1>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="username" class="block">ユーザー名</label>
+                    <input type="text" name="username" id="username" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block">パスワード</label>
+                    <input type="password" name="password" id="password" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">ログイン</button>
+            </form>
+            <p class="mt-4">初めての方は<a href="#">こちら</a>からアカウントを作成してください。</p>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">ホームページ</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+                <div class="bg-white shadow-md rounded-md p-4">
+                    <h2 class="text-xl font-bold mb-2">新着情報</h2>
+                    <p>今週の注目店舗やお得な情報をお届けします。</p>
+                    <a href="#" class="mt-2 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">もっと見る</a>
+                </div>
+                <div class="bg-white shadow-md rounded-md p-4">
+                    <h2 class="text-xl font-bold mb-2">ランキング</h2>
+                    <p>投稿された店舗のランキングを確認しましょう。</p>
+                    <a href="#" class="mt-2 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">もっと見る</a>
+                </div>
+                <div class="bg-white shadow-md rounded-md p-4">
+                    <h2 class="text-xl font-bold mb-2">グルメマップ</h2>
+                    <p>周辺の店舗を地図で確認しよう。</p>
+                    <a href="#" class="mt-2 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">もっと見る</a>
+                </div>
+            </div>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">新規投稿ページ</h1>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="storename" class="block">店舗名</label>
+                    <input type="text" name="storename" id="storename" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="genre" class="block">ジャンル</label>
+                    <input type="text" name="genre" id="genre" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block">住所</label>
+                    <input type="text" name="address" id="address" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="tel" class="block">電話番号</label>
+                    <input type="tel" name="tel" id="tel" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="openhours" class="block">営業時間</label>
+                    <input type="text" name="openhours" id="openhours" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="holiday" class="block">定休日</label>
+                    <input type="text" name="holiday" id="holiday" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="price" class="block">価格帯</label>
+                    <input type="text" name="price" id="price" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="photo" class="block">写真</label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">投稿する</button>
+            </form>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">グルメマップページ</h1>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="search" class="block">キーワード検索</label>
+                    <input type="search" name="search" id="search" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div id="map" class="h-64"></div>
+            </form>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">ランキングページ</h1>
+            <ul class="mt-4">
+                <li>
+                    <h2 class="text-xl font-bold">期間別ランキング</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>1位: <a href="#">店舗名</a></li>
+                        <li>2位: <a href="#">店舗名</a></li>
+                        <li>3位: <a href="#">店舗名</a></li>
+                    </ol>
+                </li>
+                <li class="mt-8">
+                    <h2 class="text-xl font-bold">ジャンル別ランキング</h2>
+                    <ol class="list-decimal list-inside">
+                        <li>1位: <a href="#">ジャンル</a></li>
+                        <li>2位: <a href="#">ジャンル</a></li>
+                        <li>3位: <a href="#">ジャンル</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">マイページ</h1>
+            <div class="mt-4">
+                <h2 class="text-xl font-bold">保存した店舗</h2>
+                <ul class="list-disc list-inside">
+                    <li><a href="#">店舗名</a></li>
+                    <li><a href="#">店舗名</a></li>
+                    <li><a href="#">店舗名</a></li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h2 class="text-xl font-bold">投稿した店舗</h2>
+                <ul class="list-disc list-inside">
+                    <li><a href="#">店舗名</a> <a href="#">編集</a> <a href="#">削除</a></li>
+                    <li><a href="#">店舗名</a> <a href="#">編集</a> <a href="#">削除</a></li>
+                    <li><a href="#">店舗名</a> <a href="#">編集</a> <a href="#">削除</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">お問い合わせページ</h1>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block">お名前</label>
+                    <input type="text" name="name" id="name" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block">メールアドレス</label>
+                    <input type="email" name="email" id="email" class="border-gray-400 border py-1 px-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block">お問い合わせ内容</label>
+                    <textarea name="message" id="message" rows="5" class="border-gray-400 border py-1 px-2 w-full"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">送信する</button>
+            </form>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">利用規約ページ</h1>
+            <p class="mt-4">利用規約が記載されています。必ずお読みください。</p>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">プライバシーポリシーページ</h1>
+            <p class="mt-4">プライバシーポリシーが記載されています。必ずお読みください。</p>
+        </section>
+        <section class="my-8">
+            <h1 class="text-3xl font-bold">ログアウトページ</h1>
+            <p class="mt-4">ログアウトしますか？</p>
+            <button class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700">ログアウト</button>
+        </section>
+    </main>
+    <footer class="bg-gray-900 text-white p-4 text-center">
+        <p>&copy; 2021 グルメマッチング</p>
+    </footer<div class="bg-gray-800 p-4 text-white">
+            <p>サイト内リンク</p>
+            <ul class="mt-4">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">新規投稿</a></li>
+                <li><a href="#">グルメマップ</a></li>
+                <li><a href="#">ランキング</a></li>
+                <li><a href="#">マイページ</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">利用規約</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">ログアウト</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // JavaScriptを記述
+    </script>
+</body>
+</html>

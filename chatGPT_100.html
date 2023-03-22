@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Masculine, strong, and rugged design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>MotoMatch - Custom Motorcycle Visualization</title>
+    <style>
+        /* Background image */
+        body {
+            background-image: url('https://source.unsplash.com/random/1920x1080/?motorcycle');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar-link {
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #f5c518;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .hero-subtitle {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 4rem;
+        }
+
+        /* Features section */
+        .features {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 4rem;
+            margin-top: 10rem;
+        }
+
+        .features-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 4rem;
+        }
+
+        .feature {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-image {
+            width: 30%;
+        }
+
+        .feature-description {
+            width: 70%;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .feature-text {
+            font-size: 1.2rem;
+            color: white;
+            line-height: 1.5;
+        }
+
+        /* CTA section */
+        .cta {
+            background-color: #f5c518;
+            padding: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cta-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: black;
+            line-height: 1.5;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .cta-button {
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .footer-text {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .footer-link {
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #f5c518;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">MotoMatch</a>
+        <div class="navbar-links">
+            <a href="#" class="navbar-link">Features</a>
+            <a href="#" class="navbar-link">Pricing</a>
+            <a href="#" class="navbar-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1 class="hero-title">Customize Your Motorcycle</h1>
+        <h2 class="hero-subtitle">See how your bike would look like with different parts and accessories.</h2>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Features section -->
+    <section class="features">
+        <h2 class="features-title">Features</h2>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/400x400/?motorcycle" alt="Feature Image" class="feature-image">
+            <div class="feature-description">
+                <h3 class="feature-title">Visualize Your Bike</h3>
+                <p class="feature-text">Use our stable prompt AI-generated images to see how your motorcycle would look like with different parts and accessories.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/400x400/?motorcycle" alt="Feature Image" class="feature-image">
+            <div class="feature-description">
+                <h3 class="feature-title">Save Your Designs</h3>
+                <p class="feature-text">Save your customizations and come back to them later. Share them with your friends and get their feedback.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/400x400/?motorcycle" alt="Feature Image" class="feature-image">
+            <div class="feature-description">
+                <h3 class="feature-title">Order Your Parts</h3>
+                <p class="feature-text">Once you're happy with your design, order the parts and accessories directly from our partners.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA section -->
+    <section class="cta">
+        <h2 class="cta-title">Ready to Get Started?</h2>
+        <p class="cta-text">Sign up now and start visualizing your dream motorcycle.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">© MotoMatch 2021</p>
+        <a href="#" class="footer-link">Privacy Policy</a>
+    </footer>
+</body>
+</html>

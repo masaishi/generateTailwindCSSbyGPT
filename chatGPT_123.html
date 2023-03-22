@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Whimsical and playful color scheme design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>Thorough PyTorch - Online Course</title>
+    <style>
+        /* Background color */
+        body {
+            background-color: #F3EFEF;
+        }
+        
+        /* Header styling */
+        .header {
+            background-color: #FFA07A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        /* Logo styling */
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FFF;
+        }
+        
+        /* Navigation menu styling */
+        .nav-menu {
+            display: flex;
+        }
+        
+        /* Navigation menu items styling */
+        .nav-item {
+            margin-right: 1rem;
+        }
+        
+        /* Course introduction section styling */
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        /* Course title styling */
+        .course-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #FFA07A;
+        }
+        
+        /* Course subtitle styling */
+        .course-subtitle {
+            font-size: 1.5rem;
+            color: #696969;
+            margin-bottom: 2rem;
+        }
+        
+        /* Course features section styling */
+        .features {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        /* Feature item styling */
+        .feature-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #FFF;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 20rem;
+        }
+        
+        /* Feature item icon styling */
+        .feature-icon {
+            font-size: 3rem;
+            color: #FFA07A;
+            margin-bottom: 1rem;
+        }
+        
+        /* Feature item title styling */
+        .feature-title {
+            font-size: 1.5rem;
+            color: #696969;
+            margin-bottom: 1rem;
+        }
+        
+        /* Feature item description styling */
+        .feature-description {
+            font-size: 1rem;
+            color: #696969;
+            text-align: center;
+        }
+        
+        /* Pricing section styling */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        /* Pricing item styling */
+        .pricing-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #FFF;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 20rem;
+        }
+        
+        /* Pricing item title styling */
+        .pricing-title {
+            font-size: 1.5rem;
+            color: #696969;
+            margin-bottom: 1rem;
+        }
+        
+        /* Pricing item price styling */
+        .pricing-price {
+            font-size: 2rem;
+            color: #FFA07A;
+            margin-bottom: 1rem;
+        }
+        
+        /* Pricing item description styling */
+        .pricing-description {
+            font-size: 1rem;
+            color: #696969;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA button styling */
+        .cta-btn {
+            background-color: #FFA07A;
+            color: #FFF;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        /* Hover effect on CTA button */
+        .cta-btn:hover {
+            transform: scale(1.1);
+            background-color: #FF8C61;
+        }
+        
+        /* FAQ section styling */
+        .faq {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        /* FAQ item styling */
+        .faq-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            width: 100%;
+            background-color: #FFF;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        
+        /* FAQ item question styling */
+        .faq-question {
+            font-size: 1.5rem;
+            color: #696969;
+            margin-right: 1rem;
+        }
+        
+        /* FAQ item answer styling */
+        .faq-answer {
+            font-size: 1rem;
+            color: #696969;
+        }
+        
+        /* Footer styling */
+        .footer {
+            background-color: #FFA07A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        /* Footer text styling */
+        .footer-text {
+            font-size: 1.5rem;
+            color: #FFF;
+        }
+        
+        /* Responsive design for small screens */
+        @media screen and (max-width: 768px) {
+            /* Navigation menu items are stacked */
+            .nav-menu {
+                flex-direction: column;
+            }
+            
+            /* Course features section items are stacked */
+            .features {
+                flex-direction: column;
+            }
+            
+            /* Feature item width is set to 100% */
+            .feature-item {
+                width: 100%;
+            }
+            
+            /* Pricing section items are stacked */
+            .pricing {
+                flex-direction: column;
+            }
+            
+            /* Pricing item width is set to 100% */
+            .pricing-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            Thorough PyTorch
+        </div>
+        
+        <!-- Navigation menu -->
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Course introduction -->
+    <section class="intro">
+        <h1 class="course-title">Thorough PyTorch</h1>
+        <h2 class="course-subtitle">Learn PyTorch from the ground up</h2>
+        <p class="intro-description">"Thorough PyTorch" is a comprehensive course that covers PyTorch's basics, advanced techniques, and practical applications. The course is designed to provide both theoretical knowledge and practical skills through a group learning approach. By the end of the course, participants are expected to be proficient in using PyTorch for deep learning and be able to handle real-world problems.</p>
+        <img src="https://source.unsplash.com/random/800x600/?pytorch" alt="PyTorch image">
+    </section>
+    
+    <!-- Course features -->
+    <section class="features">
+        <h2>Why Choose Thorough PyTorch?</h2>
+        <p>Here are some of the key features and benefits of the course:</p>
+        <div class="feature-item">
+            <i class="fas fa-chalkboard-teacher feature-icon"></i>
+            <h3 class="feature-title">Expert Instructors</h3>
+            <p class="feature-description">Our instructors are deep learning experts with years of experience in the industry. They will guide you through the course and provide you with personalized feedback.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-laptop-code feature-icon"></i>
+            <h3 class="feature-title">Hands-On Learning</h3>
+            <p class="feature-description">You will have access to Jupyter notebooks and other tools to practice what you learn. You will also work on real-world projects to apply your skills.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-users feature-icon"></i>
+            <h3 class="feature-title">Collaborative Learning</h3>
+            <p class="feature-description">You will be part of a group of like-minded individuals who are also learning PyTorch. You will be able to collaborate with them and share your knowledge.</p>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <p>Choose the package that best suits your needs:</p>
+        <div class="pricing-item">
+            <h3 class="pricing-title">Basic</h3>
+            <p class="pricing-price">$99</p>
+            <p class="pricing-description">Access to course materials and Jupyter notebooks</p>
+            <button class="cta-btn">Choose Basic</button>
+        </div>
+        <div class="pricing-item">
+            <h3 class="pricing-title">Premium</h3>
+            <p class="pricing-price">$199</p>
+            <p class="pricing-description">Access to course materials, Jupyter notebooks, and real-world projects</p>
+            <button class="cta-btn">Choose Premium</button>
+        </div>
+    </section>
+    
+    <!-- FAQs -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">What is PyTorch?</h3>
+            <p class="faq-answer">PyTorch is a popular deep learning framework known for flexibility, readability, and performance.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Who is this course for?</h3>
+            <p class="faq-answer">This course is for data scientists, machine learning enthusiasts, and anyone interested in learning PyTorch.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How long does the course take?</h3>
+            <p class="faq-answer">The course takes around 8 weeks to complete, with a recommended time commitment of 10-15 hours per week.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What if I have more questions?</h3>
+            <p class="faq-answer">You can contact us at support@thoroughpytorch.com and we will be happy to assist you.</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Thorough PyTorch &copy; 2021</p>
+    </footer>
+    
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+</html>

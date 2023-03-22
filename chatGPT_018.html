@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>NVTabular Based Data Analytic Solution</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight">NVTabular</span>
+        </div>
+        <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-blue-200 border-blue-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+                    Features
+                </a>
+                <a href="#pricing" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+                    Pricing
+                </a>
+                <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
+                    Contact
+                </a>
+            </div>
+            <div>
+                <a href="#" class="inline-block py-2 px-4 text-blue-200 font-semibold hover:text-white hover:bg-blue-400 rounded">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Fast Feature Engineering on Terabyte-scale Data Sets</h1>
+                <p class="mb-8 leading-relaxed">NVTabular is a new tool designed for Tabular Data Processing using GPUs. With NVTabular you can handle terabyte-scale datasets with fast feature engineering using GPUs and can be integrated with existing libraries. It also uses the Dask-cuDF library for speed.</p>
+                <div class="flex justify-center">
+                    <a href="#" class="inline-block py-2 px-6 text-lg bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-lg">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="text-gray-700 body-font" id="features">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap w-full">
+                <div class="p-4 md:w-1/3">
+                    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+                        <div class="p-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FEATURE 1</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Fast Pre-processing of Large Volumes of Data</h1>
+                            <p class="leading-relaxed mb-3">With NVTabular, you can process terabyte-scale datasets with fast feature engineering using GPUs. This results in faster pre-processing times for your large volumes of data.</p>
+                            <div class="flex items-center flex-wrap ">
+                                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
+                                    Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+                        <div class="p-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FEATURE 2</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Real-time Data Analysis</h1>
+                            <p class="leading-relaxed mb-3">Get insights into your data as soon as you have it! With NVTabular, you can analyze your data in real-time as it is being processed. This allows for faster decision making and optimization of your data analysis pipelines.</p>
+                            <div class="flex items-center flex-wrap">
+                                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
+                                    Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+                        <div class="p-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FEATURE 3</h2>
+                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Predictive Model Training</h1>
+                            <p class="leading-relaxed mb-3">With NVTabular, you can use multi-GPU processing to speed up your model training times. This results in faster iterations and optimization of your predictive models, which can be a competitive edge in industries like e-commerce.</p>
+                            <div class="flex items-center flex-wrap ">
+                                <a class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="#">
+                                    Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="text-gray-700 body-font" id="pricing">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Pricing Plan</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Choose the best plan that suits your needs and provides the features that you need for your data analytic solution.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-blue-500 flex flex-col relative">
+                        <h2 class="text-sm tracking-widest title-font mb-1 font-medium">STARTER</h2>
+                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <span>$9</span>
+                            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                        </h1>
+                        <p class="text-sm text-gray-500 font-medium">500 GB data processing limit, 4 CPU core, unlimited GPU core usage</p>
+                        <ul class="list-unstyled leading-loose">
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 1</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 2</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 3</li>
+                        </ul>
+                        <a href="#" class="mt-8 text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-lg shadow-lg">
+                            Get Started
+                        </a>
+                        <p class="text-xs text-gray-500 mt-3">Ala carte pricing available for additional power usage</p>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-gray-200 flex flex-col relative">
+                        <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <span>$29</span>
+                            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                        </h1>
+                        <p class="text-sm text-gray-500 font-medium">1 TB data processing limit, 16 CPU core, unlimited GPU core usage</p>
+                        <ul class="list-unstyled leading-loose">
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 1</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 2</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 3</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Dedicated Customer Support</li>
+                        </ul>
+                        <a href="#" class="mt-8 text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-lg shadow-lg">
+                            Get Started
+                        </a>
+                        <p class="text-xs text-gray-500 mt-3">Flexible pricing available based on additional usage</p>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-gray-200 flex flex-col relative">
+                        <h2 class="text-sm tracking-widest title-font mb-1 font-medium">ENTERPRISE</h2>
+                        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                            <span>$99</span>
+                            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                        </h1>
+                        <p class="text-sm text-gray-500 font-medium">Unlimited data processing limit, 64 CPU core, unlimited GPU core usage</p>
+                        <ul class="list-unstyled leading-loose">
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 1</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 2</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Feature 3</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> Dedicated Customer Support</li>
+                            <li><span class="text-blue-500 mr-3"><i class="fas fa-check"></i></span> SLA with 99.9% Uptime Guarantee</li>
+                        </ul>
+                        <a href="#" class="mt-8 text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-lg shadow-lg">
+                            Get Started
+                        </a>
+                        <p class="text-xs text-gray-500 mt-3">Flexible pricing available based on additional usage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="text-gray-700 body-font relative" id="contact">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Feel free to contact us if you have any questions regarding our data analytic solution or if you would like to start a new project with us.</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-300 focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-100 rounded border border-gray-300 focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="message" class="w-full bg-gray-100 rounded border border-gray-300 focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div                    </div>
+                    <div class="p-2 w-full">
+                        <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded-lg text-lg">Send Message</button>
+                    </div>
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                        <a class="text-blue-500">support@nvtabularsolution.com</a>
+                        <p class="leading-normal my-5">1234 Main Street
+                            <br>San Francisco, CA 94111</p>
+                        <span class="inline-flex">
+                            <a class="text-gray-500">
+                                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22.59 11.13A10 10 0 1 0 12 2.83"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M3 3h18v18H3z"></path>
+                                    <path d="M8.5 15l-2.25 1.5v-3a.5.5 0 0 1 .5-.5h5"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M19 12a7 7 0 0 1-14 0"></path>
+                                    <path d="M12 19a7 7 0 0 1-7-7"></path>
+                                    <path d="M12 1v3"></path>
+                                    <path d="M12 21v3"></path>
+                                    <path d="M4.22 4.22l1.42 1.42"></path>
+                                    <path d="M18.36 18.36l1.42 1.42"></path>
+                                    <path d="M1 12h3"></path>
+                                    <path d="M21 12h3"></path>
+                                    <path d="M4.22 19.78l1.42-1.42"></path>
+                                    <path d="M18.36 5.64l1.42-1.42"></path>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

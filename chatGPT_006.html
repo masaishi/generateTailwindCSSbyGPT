@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+[New Technology and One Business Idea]
+User input
+
+[HTML code in Japanese]
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>WiFi Share App</title>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <div class="container mx-auto flex flex-col items-center justify-center h-full">
+        <h1 class="text-5xl font-bold text-white text-center mb-10">WiFi Share</h1>
+        <form class="max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="mx-6 my-5">
+                <label for="wifi-name" class="text-gray-600 dark:text-gray-400 font-semibold">WiFi名</label>
+                <input required id="wifi-name" type="text" placeholder="WiFi名" name="wifi-name" class="block w-full bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg appearance-none focus:outline-none focus:bg-white mt-2 focus:shadow-outline" />
+            </div>
+            <div class="mx-6 my-5">
+                <label for="wifi-password" class="text-gray-600 dark:text-gray-400 font-semibold">パスワード</label>
+                <input required id="wifi-password" type="password" placeholder="パスワード" name="wifi-password" class="block w-full bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg appearance-none focus:outline-none focus:bg-white mt-2 focus:shadow-outline" />
+            </div>
+            <div class="mx-6 my-5">
+                <label for="wifi-time" class="text-gray-600 dark:text-gray-400 font-semibold">有効期限</label>
+                <input required id="wifi-time" type="datetime-local" name="wifi-time" class="block w-full bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg appearance-none focus:outline-none focus:bg-white mt-2 focus:shadow-outline" />
+            </div>
+            <button type="submit" class="mx-6 my-5 mb-10 px-4 py-2 font-bold text-white bg-indigo-500 rounded hover:bg-indigo-700 focus:outline-none focus:shadow-outline">WiFiを共有</button>
+        </form>
+    </div>
+</body>
+</html>

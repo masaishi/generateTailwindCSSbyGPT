@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Shapash - 機械学習モデルをより分かりやすく</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white py-6 px-4 lg:px-20 shadow-lg">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+                <img src="shapash_logo.svg" alt="Shapashロゴ" class="h-8">
+                <span class="text-gray-600 font-bold ml-2">Shapash</span>
+            </div>
+            <div class="hidden lg:flex items-center">
+                <a href="#" class="text-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out">ホーム</a>
+                <a href="#" class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out">機能</a>
+                <a href="#" class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out">利用方法</a>
+                <a href="#" class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out">お問い合わせ</a>
+            </div>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center py-2 px-3 rounded text-gray-600 border-gray-600 hover:text-gray-600 hover:border-gray-600 focus:outline-none focus:shadow-outline transition duration-300 ease-in-out" onclick="toggleMobileMenu()">
+                    <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Mobile menu</title><line x1="0" y1="10" x2="20" y2="10" stroke="currentColor" stroke-width="2"></line><line x1="0" y1="3" x2="20" y2="3" stroke="currentColor" stroke-width="2"></line><line x1="0" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2"></line></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="hidden bg-white py-4 lg:hidden" id="mobile-menu">
+        <a href="#" class="block px-4 py-2 text-gray-600 font-bold hover:bg-blue-600 hover:text-white transition duration-300 ease-in-out mb-2">ホーム</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 font-bold hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out mb-2">機能</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 font-bold hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out mb-2">利用方法</a>
+        <a href="#" class="block px-4 py-2 text-gray-600 font-bold hover:bg-gray-600 hover:text-white transition duration-300 ease-in-out mb-2">お問い合わせ</a>
+    </div>
+    <header class="py-10 px-4 lg:px-20 bg-blue-600 text-white">
+        <div class="flex flex-wrap items-center">
+            <div class="flex-1">
+                <h1 class="text-4xl font-bold">機械学習モデルを<br>より分かりやすく</h1>
+                <p class="mt-6 leading-relaxed text-lg">Shapashは、Pythonライブラリであり、誰でも理解できるように明示的なラベルを表示する多数の視覚化を提供します。このライブラリを活用することで、データサイエンティストはモデルを理解しやすくし、結果を共有することができます。</p>
+            </div>
+            <div class="flex-1">
+                <img src="shapash_illustration.svg" alt="Shapashイラスト" class="w-full">
+            </div>
+        </div>
+    </header>
+    <section class="py-16 px-4 lg:px-20">
+        <div class="flex flex-wrap items-center">
+            <div class="flex-1">
+                <img src="shapash_feature_1.svg" alt="Shapash機能1" class="h-64 mx-auto">
+                <h2 class="text-lg font-bold mt-6">より精度の高いフィルタリング</h2>
+                <p class="leading-relaxed mt-4">最新バージョンのShapashでは、モデル外のフィルタリングオプションとしてターゲットとエラーカラムをデータセットに追加することができます。これにより、データをより細かくフィルタリングし、より正確な予測が可能になります。</p>
+            </div>
+            <div class="flex-1">
+                <img src="shapash_feature_2.svg" alt="Shapash機能2" class="h-64 mx-auto">
+                <h2 class="text-lg font-bold mt-6">結果をまとめて確認</h2>
+                <p class="leading-relaxed mt-4">Shapashには、選択したサンプルの情報をサマリーするアイデンティティカードが新しく追加されました。これにより、どのサンプルがどのような結果を出したかを簡単に確認することができます。</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 px-4 lg:px-20 bg-white">
+        <div class="flex flex-wrap items-center">
+            <div class="flex-1">
+                <img src="shapash_feature_3.svg" alt="Shapash機能3" class="h-64 mx-auto">
+                <h2 class="text-lg font-bold mt-6">安定性、一貫性、コンパクト性</h2>
+                <p class="leading-relaxed mt-4">最新バージョンのShapashでは、安定性、一貫性、コンパクト性の3つのメトリクスを使用して、説明可能な手法の重要性を評価することができます。また、グループしなおしたり、フィルターしたりすることも簡単です。</p>
+            </div>
+            <div class="flex-1">
+                <img src="shapash_feature_4.svg" alt="Shapash機能4" class="h-64 mx-auto">
+                <h2 class="text-lg font-bold mt-6">HTMLレポートでの表示</h2>
+                <p class="leading-relaxed mt-4">Shapashには、HTMLレポートが新しく追加されました。これにより、一つのレポートにモデルやデータに関する情報をまとめて表示することができ、データサイエンスの監査に役立ちます。</p>
+            </div>
+        </div>
+    </section>
+    <footer class="py-6 px-4 lg:px-20 bg-gray-200">
+        <div class="flex flex-wrap items-center justify-between">
+            <p class="text-gray-600">© Shapash. All rights reserved.</p>
+            <div class="flex items-center">
+                <a href="#" class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-400 hover:text-white transition duration-300 ease-in-out">利用規約</a>
+                <a href="#" class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-400 hover:text-white transition duration-300 ease-in-out">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>

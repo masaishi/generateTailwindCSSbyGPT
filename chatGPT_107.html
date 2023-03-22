@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Sleek, minimalist, and modern design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>GLASU: A Communication-Efficient Algorithm for Federated Learning with Vertically Distributed Graph Data</title>
+  
+    <!-- Styling -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F7FAFC;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #718096;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .image-container img {
+            max-width: 600px;
+        }
+        .section {
+            margin-top: 50px;
+        }
+        .section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #718096;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GLASU: A Communication-Efficient Algorithm for Federated Learning with Vertically Distributed Graph Data</h1>
+            <p>Introducing a model-splitting method and communication-efficient algorithm for training graph neural networks through Vertical Federated Learning (VFL).</p>
+        </div>
+        <div class="image-container">
+            <img src="https://source.unsplash.com/random/800x600/?technology" alt="GLASU">
+        </div>
+        <div class="section">
+            <h2>What is GLASU?</h2>
+            <p>GLASU proposes a model-splitting method and communication-efficient algorithm to train a graph neural network through Vertical Federated Learning (VFL), where each client owns a part of the node features and a different edge set.</p>
+        </div>
+        <div class="section">
+            <h2>Why is GLASU important?</h2>
+            <p>The current research in VFL focuses on independent samples, but GLASU addresses graph-structured data by splitting the model across the clients and the server. GLASU reduces communication overhead through lazy aggregation and stale updates, achieving convergence guarantees and matching the accuracy of centralized training.</p>
+        </div>
+    </div>
+</body>
+</html>

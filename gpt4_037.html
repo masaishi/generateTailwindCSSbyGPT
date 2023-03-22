@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>RiskWizard - Unlock the power of pyGAM in finance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-blue-500 py-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-4xl font-bold">Risk<span class="text-blue-100">Wizard</span></a>
+            <nav>
+                <ul class="flex">
+                    <li class="mr-4"><a href="#features">Features</a></li>
+                    <li class="mr-4"><a href="#about">About</a></li>
+                    <li class="mr-4"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-blue-200 py-24">
+            <div class="container mx-auto text-center">
+                <h1 class="text-6xl font-bold mb-6">Unlock the power of pyGAM in finance with RiskWizard</h1>
+                <p class="text-2xl">Empowering financial institutions and investors with Generalized Additive Models</p>
+            </div>
+        </section>
+
+        <section id="features" class="py-24">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12">Features</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/300x200/?finance" alt="Prediction">
+                        <h3 class="text-2xl font-bold mt-6">Prediction of Financial Outcomes</h3>
+                        <p class="mt-4">RiskWizard helps you predict and manage complex financial outcomes using advanced modeling techniques.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/300x200/?risk" alt="Risk Identification">
+                        <h3 class="text-2xl font-bold mt-6">Identification of Key Risk Factors</h3>
+                        <p class="mt-4">Identify key risk factors influencing financial outcomes and make informed decisions to maximize returns & minimize risk.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://source.unsplash.com/random/300x200/?data-visualization" alt="Visualization">
+                        <h3 class="text-2xl font-bold mt-6">Visualization of Models & Relationships</h3>
+                        <p class="mt-4">Easily visualize complex relationships between risk factors and financial outcomes using intuitive graphical representations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-blue-100 py-24">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12">About pyGAM</h2>
+                <p>pyGAM is a Python library that uses Generalized Additive Models (GAMs) to enable users to model non-linear relationships and additivity while maintaining interpretability. GAMs offer great flexibility in modeling complex datasets and are particularly useful for financial modeling, often revealing hidden trends and insights that simpler models might miss.</p>
+                <p class="mt-6">The key concepts involved in the pyGAM model are penalized B splines, which smooth the model and prevent overfitting, and the link function, which relates the expected value of the dependent variable to the linear predictors.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-12">Get in Touch</h2>
+                <form class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-lg mb-2">Name:</label>
+                        <input type="text" id="name" class="w-full border border-gray-300 rounded p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg mb-2">Email:</label>
+                        <input type="email" id="email" class="w-full border border-gray-300 rounded p-2">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-lg mb-2">Message:</label>
+                        <textarea id="message" rows="5" class="w-full border border-gray-300 rounded p-2"></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-blue-500 py-2 px-6 rounded">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-500 py-4 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; {{ current_year }} RiskWizard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

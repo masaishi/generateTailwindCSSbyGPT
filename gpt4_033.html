@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-pPWWYCQAYAYwhXavaxIJ3JjKRYHVSyBfv1wEQrNT76vwjrajceR/mpmEjU1J4Xp4sVIKh8FKvR+J2zeiqReT6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ChatGPT Prompts</title>
+</head>
+<body>
+    <div class="flex flex-col h-screen bg-gray-800">
+        <header class="text-white text-center py-4"><img src="https://source.unsplash.com/random/350x100/?ui,ux" alt="Logo"> - ChatGPT Prompts</header>
+        <main class="flex-grow flex flex-row">
+            <div class="w-1/2 bg-purple-600 text-white overflow-y-scroll">
+                <form class="p-4 flex justify-between">
+                    <input type="text" name="search" placeholder="Search Characters" class="w-2/3 p-2 rounded bg-gray-300 text-black">
+                    <a href="https://beta.openai.com/signup/" target="_blank" class="uppercase bg-red-500 hover:bg-red-700 text-white p-2 rounded">Get Your Access Key</a>
+                </form>
+                <ul class="p-4">
+                    <li class="mb-4">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <img class="w-16 h-16 rounded-full" src="https://source.unsplash.com/random/100x100/?marketer" alt="Marketer">
+                                <div class="ml-4">
+                                    <h3 class="text-xl font-semibold">Marketer</h3>
+                                    <p class="text-sm">Description of the marketer character.</p>
+                                </div>
+                            </div>
+                            <div class="text-sm">
+                                <i class="fas fa-heart"></i> 3 Faves &bull;
+                                <i class="fas fa-users"></i> 4 Followers
+                            </div>
+                        </div>
+                        <div class="mt-2 flex">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded w-1/2 mr-2">Edit Prompt</button>
+                            <button class="bg-green-500 hover:bg-green-700 text-white p-2 rounded w-1/2">Add to Favorites</button>
+                        </div>
+                    </li>
+                    <!-- more characters here -->
+                </ul>
+            </div>
+            <div class="w-1/2 bg-gray-200 text-black p-4">
+                <h2 class="text-2xl mb-4">Character Chat</h2>
+                <div class="h-5/6 flex flex-col justify-end">
+                    <div class="bg-white p-4 rounded mb-4">
+                        <p class="font-semibold mb-2">Question to the Character</p>
+                        <p>Response from the Character</p>
+                    </div>
+                    <!-- more messages here -->
+                </div>
+                <form class="mt-4">
+                    <input type="text" name="message" placeholder="Type your message here..." class="w-full p-2 rounded focus:outline-none focus:ring-2 focus:ring-gray-500">
+                </form>
+            </div>
+        </main>
+        <footer class="text-center text-white py-4">&copy; 2023 ChatGPT Prompts</footer>
+    </div>
+</body>
+</html>

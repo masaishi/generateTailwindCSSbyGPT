@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FLUTE Commerce - E-commerce Personalization Platform</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 75px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .header ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .header li {
+            margin-left: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .header li:hover {
+            color: #4AA4CC;
+        }
+
+        .header button {
+            padding: 10px 20px;
+            background-color: #4AA4CC;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .header button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1500x800/?ecommerce');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            max-width: 800px;
+            text-align: center;
+            padding: 0 50px;
+        }
+
+        .features {
+            background-color: #F5F5F5;
+            padding: 80px 0;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .feature img {
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .feature h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .feature p {
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 1.5;
+            max-width: 500px;
+        }
+
+        .cta {
+            background-color: #4AA4CC;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        .cta h2 {
+            font-size: 3rem;
+            margin-right: 20px;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #4AA4CC;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background-color: #F5F5F5;
+            padding: 50px 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .footer li {
+            margin-left: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .footer li:hover {
+            color: #4AA4CC;
+        }
+
+        .footer p {
+            font-size: 1.2rem;
+            color: #6C757D;
+        }
+
+        .scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+        }
+
+        .scroll span {
+            display: block;
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #4AA4CC;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .scroll span:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://source.unsplash.com/random/200x200/?logo" alt="logo">
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+        </ul>
+        <button>Contact Us</button>
+    </header>
+
+    <div class="hero">
+        <h1>Unlock the Power of Personalized E-commerce Customer Experiences with FLUTE Commerce</h1>
+    </div>
+
+    <div class="features">
+        <div class="container mx-auto">
+            <div class="feature">
+                <img src="https://source.unsplash.com/random/400x400/?revolution" alt="revolution">
+                <h2>Federated Learning</h2>
+                <p>FLUTE Commerce uses federated learning to train models on data owned by individual customers, not shared among competing e-commerce outlets. This ensures maximum customer data privacy while enabling personalized customer experiences.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://source.unsplash.com/random/400x400/?machine-learning" alt="machine learning">
+                <h2>Machine Learning Models</h2>
+                <p>FLUTE Commerce supports most model types including computer vision, convolutional neural networks, recurrent neural networks, and Huggingface Transformers. This ensures that your e-commerce outlet can develop algorithms that capture the essence of your business and the experience your consumers desire.</p>
+            </div>
+
+            <div class="feature">
+                <img src="https://source.unsplash.com/random/400x400/?security" alt="security">
+                <h2>Data Privacy and Security</h2>
+                <p>FLUTE Commerce offers local and global differential privacy, multi-node orchestration, and a variety of standard optimizers and aggregation methods. This ensures that your business can focus on creating personalized customer experiences without worrying about data privacy and security.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Revolutionize Your E-commerce Business?</h2>
+        <button>Contact Us Today</button>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+        </ul>
+        <p>© 2021 FLUTE Commerce All rights reserved.</p>
+    </div>
+
+    <div class="scroll">
+        <span>&#8595;</span>
+    </div>
+</body>
+</html>

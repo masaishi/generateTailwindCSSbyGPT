@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sentencify Me</title>
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-white font-semibold text-lg">Sentencify Me</h1>
+                </div>
+                <div class="flex">
+                    <a href="#" class="px-3 py-2 text-white hover:bg-gray-700 rounded-md">新しい文章を作成</a>
+                    <a href="#" class="ml-4 px-3 py-2 text-white hover:bg-gray-700 rounded-md">保存済みの文章</a>
+                    <a href="#" class="ml-4 px-3 py-2 text-white hover:bg-gray-700 rounded-md">アカウント設定</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ホームページ -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Sentencify Me</h2>
+                <p class="mt-4 text-lg text-gray-500">SNSの投稿やキャプション、その他の文章作成に使える、ユニークで創造的な文章を自動生成するAIのウェブアプリケーションです。</p>
+                <a href="#" class="mt-8 bg-indigo-600 border border-transparent rounded-md py-3 px-5 inline-flex items-center text-base font-medium text-white hover:bg-yellow-500">
+                    サインアップして始める
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- サインアップ・ログイン -->
+    <section class="bg-gray-100 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-center text-3xl font-extrabold text-gray-900">アカウントを作成</h2>
+            <form class="mt-8 space-y-6" action="#" method="POST">
+                <input type="hidden" name="remember" value="true">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div>
+                        <label for="name" class="sr-only">氏名</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="氏名">
+                    </div>
+                    <div>
+                        <label for="email-address" class="sr-only">メールアドレス</label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="メールアドレス">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">パスワード</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="パスワード">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10 0a10 10 0 100 20 10 10 0 000-20zm1 14.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm-.75-3.5a2.75 2.75 0 00-2.75 2.75v1.75h5.5v-1.75a2.75 2.75 0 00-2.75-2.75z" clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        サインアップ
+                    </button>
+                </div>
+            </form>
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                        <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-gray-100 text-gray-500">または</span>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <a href="#" class="group relative w-full flex justify-center py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                        <span class="sr-only">Googleでログインする</span>
+                        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm4.08 14.54c-.37.256-.92.427-1.48.427a2.06 2.06 0 01-1.46-.6c-.39-.39-.63-.92-.63-1.51s.24-1.12.63-1.51l.96-.95c.26-.26.45-.57.57-.91h-.57c-1.18 0-2.14-.96-2.14-2.14s.96-2.14 2.14-2.14 2.14.96 2.14 2.14c0 .2-.03.39-.07.58l-.83.08c-.6.06-1.13.27-1.54.64-.44.388-.7.922-.7 1.49 0 .57.26 1.1.7 1.49.4.374.92.594 1.48.594h.02c.56 0 1.1-.17 1.47-.42v.01l.98.98c.38.39.62.92.62 1.51 0 .59-.24 1.12-.63 1.51z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="ml-4">Googleでログインする</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ダッシュボード -->
+    <section class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="px-4 py-6 sm:px-0">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900">ダッシュボード</h2>
+            </div>
+            <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-100 overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">新しい文章を作成</h3>
+                        <div class="mt-2 max-w-xl text-sm text-gray-500">
+                            <p>キーワード、フレーズ、アイデアを入力すると、人工知能を使用してユニークで創造的な文章を自動生成します。</p>
+                        </div>
+                        <div class="mt-3 text-sm">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">新しい文章を作成する</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">保存済みの文章</h3>
+                        <div class="mt-2 max-w-xl text-sm text-gray-500">
+                            <p>これまでに作成した文章を確認し、必要に応じて編集または削除することができます。</p>
+                        </div>
+                        <div class="mt-3 text-sm">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">保存済みの文章を確認する</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-100 overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900">アカウント設定</h3>
+                        <div class="mt-2 max-w-xl text-sm text-gray-500">
+                            <p>アカウント情報やパスワードを変更することができます。</p>
+                        </div>
+                        <div class="mt-3 text-sm">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">アカウント設定を変更する</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 文章生成 -->
+    <section class="bg-gray-100 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900">文章を生成する</h2>
+            <div class="mt-8 max-w-lg">
+                <form>
+                    <div>
+                        <label for="keywords" class="block text-lg font-medium text-gray-900">キーワード</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <input type="text" name="keywords" id="keywords" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="キーワードを入力してください">
+                            <button type="submit" class="ml-2 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                生成する
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-8 max-w-lg">
+                <textarea class="h-40 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300" placeholder="自動生成された文章が表示されます"></textarea>
+                <div class="mt-4 flex justify-end">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-gray-600 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        編集する
+                    </button>
+                    <button type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        保存する
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 保存済みの文章 -->
+    <section class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900">保存済みの文章</h2>
+            <div class="mt-8">
+                <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <li class="col-span-1 bg-gray-100 rounded-lg shadow divide-y divide-gray-200">
+                        <div class="w-full flex items-center justify-between p-6 space-x-6">
+                            <div class="flex-1 truncate">
+                                <div class="flex items-center space-x-3">
+                                    <h3 class="text-gray-900 text-lg font-medium truncate">猫の写真</h3>
+                                </div>
+                                <p class="mt-1 text-gray-500 text-sm truncate">エレファントカフェで撮った写真です。</p>
+                            </div                        <div class="ml-4 flex-shrink-0">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                編集する
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-span-1 bg-gray-100 rounded-lg shadow divide-y divide-gray-200">
+                    <div class="w-full flex items-center justify-between p-6 space-x-6">
+                        <div class="flex-1 truncate">
+                            <div class="flex items-center space-x-3">
+                                <h3 class="text-gray-900 text-lg font-medium truncate">屋台の食べ物</h3>
+                            </div>
+                            <p class="mt-1 text-gray-500 text-sm truncate">バンコクで食べた屋台の食べ物。</p>
+                        </div>
+                        <div class="ml-4 flex-shrink-0">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                編集する
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-span-1 bg-gray-100 rounded-lg shadow divide-y divide-gray-200">
+                    <div class="w-full flex items-center justify-between p-6 space-x-6">
+                        <div class="flex-1 truncate">
+                            <div class="flex items-center space-x-3">
+                                <h3 class="text-gray-900 text-lg font-medium truncate">新しいアイデア</h3>
+                            </div>
+                            <p class="mt-1 text-gray-500 text-sm truncate">今思いついた新しいアイデア。</p>
+                        </div>
+                        <div class="ml-4 flex-shrink-0">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                編集する
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- About us -->
+<section class="bg-white py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">私たちについて</h2>
+        <div class="mt-8 max-w-xl">
+            <p class="text-xl text-gray-500">私たちは新しい文章生成アプリ「Sentencify Me」の制作者です。私たちは、独自の文章を作成するための革新的で創造的な方法を提供することを目指しています。</p>
+        </div>
+        <div class="mt-8">
+            <div class="inline-flex rounded-md shadow">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    もっと詳しく
+                </a>
+            </div>
+        </div>
+    </div>
+</section<!-- サイトフッター -->
+<footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+            <div class="px-5 py-2">
+                <a href="#" class="text-base text-white hover:text-gray-100">
+                    ホーム
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base text-white hover:text-gray-100">
+                    会社概要
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base text-white hover:text-gray-100">
+                    ブログ
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base text-white hover:text-gray-100">
+                    お問い合わせ
+                </a>
+            </div>
+        </nav>
+        <div class="mt-8 flex justify-center space-x-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19.593 2L16 2.01c-2.677-.018-4.45 1.475-4.45 4.148V8.25H8.99a.747.747 0 00-.747.747v3.004c0 .411.336.747.747.747h3.56v7.204c0 .411.336.747.747.747h3.997a.747.747 0 00.747-.747v-7.205h3.571a.747.747 0 00.747-.747l.006-3.004a.747.747 0 00-.747-.747h-3.57V5.274c0-.433.261-.66.51-.66.24 0 1.009-.003 1.925-.003H16V2.147C16 2.064 16.109 2 16.219 2h3.374c.159 0 .289.062.404.177.114.115.176.245.176.403V2z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M23.998 4.568c-.884.388-1.83.653-2.82.772 1.013-.614 1.794-1.584 2.162-2.74-.95.562-2 .97-3.115 1.193-.893-.95-2.165-1.546-3.566-1.546-2.702 0-4.89 2.187-4.89 4.89 0 .385.044.759.128 1.116-4.064-.204-7.672-2.147-10.075-5.102-.422.722-.662 1.563-.662 2.462 0 1.696.863 3.19 2.172 4.06-.8-.025-1.55-.246-2.214-.612v.06c0 2.365 1.678 4.33 3.91 4.78-.41.112-.84.167-1.28.167-.313 0-.618-.03-.92-.083.629 1.936 2.45 3.35 4.61 3.387-1.68 1.314-3.795 2.098-6.092 2.098-.395 0-.785-.023-1.174-.07 2.168 1.407 4.74 2.223 7.523 2.223 9.02 0 13.954-7.476 13.954-13.954v-.633c.962-.697 1.847-1.494 2.598-2.433z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.079 2.25 1.25 7.079 1.25 13C1.25 17.002 3.486 20.438 7.279 21.747C7.879 21.872 8.03 21.495 8.03 21.223C8.03 20.934 8.02 20.375 8.016 19.676C5.327 20.242 4.868 18.585 4.868 18.585C4.519 17.687 3.831 17.389 3.831 17.389C2.997 16.865 3.902 16.883 3.902 16.883C4.822 16.945 5.337 17.811 5.337 17.811C6.165 19.234 7.386 18.762 8.03 18.481C8.141 17.904 8.389 17.481 8.67 17.221C6.309 16.951 3.812 15.967 3.812 11.389C3.812 10.08 4.271 8.979 5.022 8.117C4.879 7.827 4.417 6.606 5.054 4.981C5.054 4.981 6.045 4.672 8.022 6.848C8.897 6.645 9.836 6.544 10.784 6.544C11.732 6.544 12.671 6.645 13.546 6.848C15.522 4.672 16.513 4.981 16.513 4.981C17.149 6.606 16.687 7.827 16.538 8.117C17.278 8.979 17.735 10.08 17.735 11.389C17.735 15.983 15.228 16.965 12.876 17.221C13.196 17.481 13.438 17.908 13.438 18.585C13.438 19.086 13.429 19.632 13.429 21.223C13.429 21.494 13.58 21.872 14.18 21.747C17.973 20.438 20.209 17.002 20.209 13C20.209 7.079 15.379 2.25 9.458 2.25H12Z"/>
+                </svg>
+            </a>
+        </div>
+        <p class="mt-8 text-center text-base text-gray-400">
+            &copy; 2021 Sentencify Me. All rights reserved.
+        </p>
+    </div>
+</footer>
+</div> <!-- end of page container -->
+<script src="js/main.js"></script>
+</body>
+</html>

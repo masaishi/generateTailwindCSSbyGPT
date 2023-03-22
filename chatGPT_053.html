@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Story Starter | ホームページ</title>
+</head>
+<body class="bg-gray-100">
+    <!-- ヘッダー -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <h1 class="text-xl font-bold text-gray-800">ストーリー・スターター</h1>
+            <nav class="text-gray-600">
+                <a href="#" class="mx-4 hover:text-gray-800">アカウント</a>
+                <a href="#" class="mx-4 hover:text-gray-800">ヘルプ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto mt-8">
+        <!-- ウェルカム・メッセージ --> 
+        <section class="text-center">
+            <h2 class="text-4xl font-bold text-gray-800">ようこそ、ストーリー・スターターへ</h2>
+            <p class="text-lg text-gray-600 mt-4">作家の方々に、ライティングのプロンプトを提供するウェブアプリケーションです。</p>
+            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded-full">はじめる</a>
+        </section>
+
+        <!-- サインアップ・ページ -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800">アカウント登録</h2>
+            <form class="mt-8 w-1/2 mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">名前</label>
+                    <input type="text" id="name" name="name" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">メールアドレス</label>
+                    <input type="email" id="email" name="email" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 font-bold mb-2">パスワード</label>
+                    <input type="password" id="password" name="password" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded-full">登録する</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- ログイン・ページ -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800">ログイン</h2>
+            <form class="mt-8 w-1/2 mx-auto">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">メールアドレス</label>
+                    <input type="email" id="email" name="email" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 font-bold mb-2">パスワード</label>
+                    <input type="password" id="password" name="password" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded-full">ログインする</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- カスタマイズ可能なプロンプト -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800">プロンプト設定</h2>
+            <form class="mt-8 w-1/2 mx-auto">
+                <div class="mb-4">
+                    <label for="genre" class="block text-gray-700 font-bold mb-2">ジャンル</label>
+                    <select id="genre" name="genre" class="border-2 border-gray-400 p-2 w-full">
+                        <option value="action">アクション</option>
+                        <option value="romance">ロマンス</option>
+                        <option value="horror">ホラー</option>
+                        <option value="sci-fi">SF</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="character" class="block text-gray-700 font-bold mb-2">登場人物</label>
+                    <input type="text" id="character" name="character" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="setting" class="block text-gray-700 font-bold mb-2">舞台</label>
+                    <input type="text" id="setting" name="setting" class="border-2 border-gray-400 p-2 w-full">
+                </div>
+                <div class="mb-4">
+                    <label for="style" class="block text-gray-700 font-bold mb-2">スタイル</label>
+                    <select id="style" name="style" class="border-2 border-gray-400 p-2 w-full">
+                        <option value="short-story">ショートストーリー</option>
+                        <option value="novel">ノベル</option>
+                    </select>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded-full">プロンプト生成</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- ライティング・ツール -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800">ライティング・ツール</h2>
+            <div class="grid grid-cols-3 gap-8 mt-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">登場人物</h3>
+                    <p class="text-gray-600">登場人物を作成するためのツールです。</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600 mt-4">もっと見る</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">舞台</h3>
+                    <p class="text-gray-600">ストーリーの舞台を作成するためのツールです。</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600 mt-4">もっと見る</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">プロット</h3>
+                    <p class="text-gray-600">ストーリーラインを形成するためのツールです。</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-600 mt-4">もっと見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ユーザーダッシュボード -->
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold text-gray-800">ダッシュボード</h2>
+            <div class="grid grid-cols-2 gap-8 mt-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">保存したプロンプト</h3>
+                    <p class="text-gray-600">作成したプロンプトはここに保存されます。</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">進捗状況</h3>
+                    <p class="text-gray-600">作品の進捗状況を確認できます。</p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded-full">シェアする</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-white shadow mt-16">
+        <div class="container mx-auto p-6">
+            <nav class="flex justify-between text-gray-600">
+                <a href="#" class="mx-4 hover:text-gray-800">私たちについて</a>
+                <a href="#" class="mx-4 hover:text-gray-800">お問い合わせ</a>
+                <a href="#" class="mx-4 hover:text-gray-800">プライバシー・ポリシー</a>
+                <a href="#" class="mx-4 hover:text-gray-800">利用規約</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

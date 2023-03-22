@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ChatGPT Prompt Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="container mx-auto p-10">
+        <h1 class="text-4xl font-bold mb-6">ChatGPT Prompt Editor</h1>
+
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Form & Characters -->
+            <div class="bg-white shadow-md rounded-lg p-8">
+                <h2 class="mb-6 text-2xl font-semibold">Setup & Characters</h2>
+
+                <form id="access-key-form" class="mb-6">
+                    <label for="openai-access-key" class="block text-sm font-medium text-gray-700">OpenAI API Access Key</label>
+                    <input type="text" name="openai-access-key" id="openai-access-key" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" required>
+                    <button type="submit" class="w-full mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Submit</button>
+                </form>
+
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="rounded overflow-hidden shadow-md">
+                        <img class="w-full" src="https://source.unsplash.com/random/350x200/?marketer" alt="Marketer">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Marketer</div>
+                            <button class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Choose</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden shadow-md">
+                        <img class="w-full" src="https://source.unsplash.com/random/350x200/?engineer" alt="Engineer">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Engineer</div>
+                            <button class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Choose</button>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden shadow-md">
+                        <img class="w-full" src="https://source.unsplash.com/random/350x200/?web-writer" alt="Web Writer">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Web Writer</div>
+                            <button class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat section -->
+            <div class="bg-white shadow-md rounded-lg p-8">
+                <h2 class="mb-6 text-2xl font-semibold">Chat</h2>
+
+                <div class="relative overflow-auto h-96 mb-6 border border-gray-300 rounded">
+                    <ul id="chat-messages" class="pl-0 list-none">
+                        <!-- Chat messages will appear here -->
+                    </ul>
+                </div>
+
+                <form id="chat-form">
+                    <div class="flex items-center">
+                        <input type="text" id="chat-input" class="flex-1 mr-4 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" placeholder="Ask a question or type a message" required>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

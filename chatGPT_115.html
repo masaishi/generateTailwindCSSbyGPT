@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bold and dramatic color scheme design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>SemDeDup - Innovative Data-efficient Learning</title>
+    <style>
+        /* Bold and dramatic color scheme */
+        :root {
+            --primary-color: #8B5CF6;
+            --secondary-color: #34D399;
+            --dark-color: #1F2937;
+            --light-color: #F3F4F6;
+        }
+
+        body {
+            background-color: var(--light-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light-color);
+            margin-left: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background-image: url(https://source.unsplash.com/random/1200x800/?machine-learning);
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: var(--light-color);
+            padding: 2rem;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .pricing {
+            max-width: 1200px;
+            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 4rem auto;
+        }
+
+        .faq h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .faq-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .faq-list li {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .integrations {
+            max-width: 1200px;
+            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .integration-card {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .integration-card img {
+            max-width: 100%;
+        }
+
+        .awards {
+            max-width: 1200px;
+            margin: 4rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .award {
+            margin: 1rem;
+        }
+
+        .award img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-text {
+                font-size: 1.2rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing {
+                grid-template-columns: 1fr;
+            }
+
+            .faq {
+                max-width: 600px;
+            }
+
+            .integrations {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">SemDeDup</div>
+        <nav class="header-nav">
+            <a href="#" class="nav-link">Features</a>
+            <a href="#" class="nav-link">Pricing</a>
+            <a href="#" class="nav-link">FAQs</a>
+            <a href="#" class="nav-link">Integrations</a>
+            <a href="#" class="btn">Sign up</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Revolutionize your data-efficient learning with SemDeDup</h1>
+            <p>Remove semantic duplicates and speed up your models with minimal performance loss.</p>
+            <a href="#" class="btn">Sign up for free</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Efficient Learning</h3>
+            <p>SemDeDup can remove 50% of the data with minimal performance loss, effectively halving training time.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Improved Performance</h3>
+            <p>SemDeDup improves performance out of distribution and provides more efficiency gains compared to prior approaches.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Semantic Deduplication</h3>
+            <p>SemDeDup uses pre-trained embeddings to identify and remove semantic duplicates in web-scale datasets, preserving performance and speeding up learning.</p>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="pricing-card">
+            <h3>Free</h3>
+            <p>Access to basic features</p>
+            <a href="#" class="btn">Sign up for free</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Pro</h3>
+            <p>Access to advanced features</p>
+            <a href="#" class="btn">Sign up for Pro</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p>Customizable features for your organization</p>
+            <a href="#" class="btn">Contact us</a>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="faq-list">
+            <li>
+                <div class="faq-question">What is SemDeDup?</div>
+                <div class="faq-answer">SemDeDup is a new method for data-efficient learning through semantic deduplication, which can remove semantically similar but not identical data pairs to make models learn faster with less data.</div>
+            </li>
+            <li>
+                <div class="faq-question">How does SemDeDup work?</div>
+                <div class="faq-answer">SemDeDup uses pre-trained embeddings to identify and remove semantic duplicates in web-scale datasets, thereby preserving performance and speeding up learning.</div>
+            </li>
+            <li>
+                <div class="faq-question">What are the benefits of using SemDeDup?</div>
+                <div class="faq-answer">SemDeDup can remove 50% of the data with minimal performance loss, effectively halving training time. It also improves performance out of distribution and provides more efficiency gains compared to prior approaches.</div>
+            </li>
+            <li>
+                <div class="faq-question">How much does SemDeDup cost?</div>
+                <div class="faq-answer">SemDeDup has a free plan with access to basic features, a Pro plan with access to advanced features, and an Enterprise plan with customizable features for your organization.</div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Integrations -->
+    <section class="integrations">
+        <div class="integration-card">
+            <img src="https://source.unsplash.com/random/400x400/?google" alt="Google">
+        </div>
+        <div class="integration-card">
+            <img src="https://source.unsplash.com/random/400x400/?microsoft" alt="Microsoft">
+        </div>
+        <div class="integration-card">
+            <img src="https://source.unsplash.com/random/400x400/?facebook" alt="Facebook">
+        </div>
+        <div class="integration-card">
+            <img src="https://source.unsplash.com/random/400x400/?amazon" alt="Amazon">
+        </div>
+    </section>
+
+    <!-- Awards and Recognitions -->
+    <section class="awards">
+        <div class="award">
+            <img src="https://source.unsplash.com/random/200x200/?award" alt="Award">
+        </div>
+        <div class="award">
+            <img src="https://source.unsplash.com/random/200x200/?award" alt="Award">
+        </div>
+        <div class="award">
+            <img src="https://source.unsplash.com/random/200x200/?award" alt="Award">
+        </div>
+    </section>
+</body>
+</html>

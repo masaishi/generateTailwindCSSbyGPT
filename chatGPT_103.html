@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Classic and timeless color scheme design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <title>MotoMatch - Custom Motorcycle Visualization</title>
+    <style>
+        body {
+            background-color: #E5E5E5;
+        }
+
+        .header {
+            background-color: #2F2E41;
+            color: #FFFFFF;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .header img {
+            width: 5rem;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/random/1920x1080/?motorcycle');
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #FFFFFF;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 30%;
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            margin: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .feature img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .cta {
+            background-color: #2F2E41;
+            color: #FFFFFF;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .cta h3 {
+            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            margin: 0;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta button {
+            background-color: #FFFFFF;
+            color: #2F2E41;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .cta button:hover {
+            background-color: #2F2E41;
+            color: #FFFFFF;
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>MotoMatch</h1>
+        <img src="https://source.unsplash.com/random/100x100/?motorcycle" alt="Logo">
+    </header>
+
+    <section class="hero">
+        <h2>Visualize your dream motorcycle</h2>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/500x500/?motorcycle,parts" alt="Parts">
+            <h3>Customizable Parts</h3>
+            <p>Choose from a wide range of parts and accessories to customize your motorcycle.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/500x500/?motorcycle,accessories" alt="Accessories">
+            <h3>Accessories</h3>
+            <p>Add accessories to your motorcycle to make it unique and functional.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/random/500x500/?motorcycle,design" alt="Design">
+            <h3>Design</h3>
+            <p>See how your motorcycle would look like with different designs and paint jobs.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h3>Ready to see your dream motorcycle?</h3>
+        <p>Sign up now and start visualizing!</p>
+        <button>Sign Up</button>
+    </section>
+</body>
+</html>

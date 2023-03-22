@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>mzutils - Personal Toolkit for Machine Learning</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-white">
+        <nav class="container mx-auto px-6 py-2 flex items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-gray-800 mr-6">
+                <img src="https://source.unsplash.com/random/200x200/?machinelearning" alt="mzutils logo" class="h-8 w-8 mr-2">
+                <span class="font-semibold text-xl tracking-tight">mzutils</span>
+            </div>
+            <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-gray-900">
+                    <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><g><rect y="9" width="20" height="2"/><rect y="3" width="20" height="2"/><rect y="15" width="20" height="2"/></g></svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#features" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+                        Features
+                    </a>
+                    <a href="#pricing" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900 mr-4">
+                        Pricing
+                    </a>
+                    <a href="#team" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-gray-900">
+                        Team
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-800 border-gray-800 hover:border-transparent hover:text-white hover:bg-gray-800 mt-4 lg:mt-0">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="container mx-auto p-6 bg-gray-100">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+            <div class="lg:w-1/2">
+                <h1 class="text-3xl lg:text-5xl font-bold leading-none mb-2">Personal Toolkit for Machine Learning</h1>
+                <p class="text-xl lg:text-2xl mb-4">Designed for NLP and RL tasks, mzutils simplifies your workflow and makes your tasks more efficient.</p>
+                <button class="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-700">Start Free Trial</button>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="https://source.unsplash.com/random/800x600/?machinelearning" alt="mzutils in action" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container mx-auto p-6">
+        <h2 class="text-3xl lg:text-5xl font-bold leading-none mb-2">Features</h2>
+        <p class="text-xl lg:text-2xl mb-12">Discover the powerful features of mzutils that simplify your machine learning tasks.</p>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x300/?machinelearning" alt="Data Cleaning" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Data Cleaning</h3>
+                    <p class="text-gray-800">Clean and preprocess your data with ease using mzutils. Support for various formats, including JSON, CSV, numpy arrays and tensors.</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x300/?machinelearning" alt="Visualization" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Visualization</h3>
+                    <p class="text-gray-800">Visualize your data and results easily using mzutils. Support for various chart types, including bar charts, line charts and scatter plots.</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x300/?machinelearning" alt="Modeling" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Modeling</h3>
+                    <p class="text-gray-800">Build and train your machine learning models efficiently using mzutils. Support for various models, including neural networks, decision trees and SVMs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="container mx-auto p-6 bg-gray-100">
+        <h2 class="text-3xl lg:text-5xl font-bold leading-none mb-2">Pricing</h2>
+        <p class="text-xl lg:text-2xl mb-12">Choose a plan that suits your needs and start using mzutils today.</p>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Free Plan</h3>
+                    <p class="text-gray-800">Basic features for personal use</p>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">$0</h4>
+                    <button class="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 mt-4">Get Started</button>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Standard Plan</h3>
+                    <p class="text-gray-800">Advanced features for small teams</p>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">$49/month</h4>
+                    <button class="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 mt-4">Get Started</button>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Premium Plan</h3>
+                    <p class="text-gray-800">Enterprise-level features for large teams</p>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">$99/month</h4>
+                    <button class="bg-gray-800 text-white font-bold py-2 px-4 rounded hover:bg-gray-700 mt-4">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="container mx-auto p-6">
+        <h2 class="text-3xl lg:text-5xl font-bold leading-none mb-2">Our Team</h2>
+        <p class="text-xl lg:text-2xl mb-12">Meet the talented individuals behind mzutils.</p>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x400/?machinelearning" alt="John Doe" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                    <p class="text-gray-800">CEO</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x400/?machinelearning" alt="Jane Doe" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold mb-2">Jane Doe</h3>
+                    <p class="text-gray-800">CTO</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://source.unsplash.com/random/400x400/?machinelearning" alt="Bob Smith" class="rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold mb-2">Bob Smith</h3>
+                    <p class="text-gray-800">Lead Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-wrap justify-center items-center">
+                <div class="w-full text-center">
+                    <p class="text-gray-800">&copy; 2021 mzutils. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

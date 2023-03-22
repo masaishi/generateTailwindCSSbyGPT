@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Informative, detailed, and descriptive design. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- GLASU: A Communication-Eﬃcient Algorithm for Federated Learning with Vertically Distributed Graph Data -->
+<!-- Design with Tailwind CSS -->
+<!-- Images from Unsplash -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLASU: A Communication-Eﬃcient Algorithm for Federated Learning with Vertically Distributed Graph Data</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-10">
+        <h1 class="text-3xl font-bold mb-5">GLASU: A Communication-Eﬃcient Algorithm for Federated Learning with Vertically Distributed Graph Data</h1>
+        <p class="text-lg mb-5">GLASU is a new algorithm for federated learning on graph data that significantly reduces communication overhead. It is designed to handle graphs with vertical data distribution, where each client owns a part of the node features and a different edge set.</p>
+        <img src="https://source.unsplash.com/random/1200x600/?graph" alt="Graph" class="w-full h-64 object-cover mb-5">
+
+        <h2 class="text-xl font-bold mb-3">Problem, Background, and Related Works</h2>
+        <p class="mb-5">The problem considered in this work is vertical federated learning on graph data, where computing clients collectively train a model based on the partial features of the same set of samples they possess. The goal is to learn a model that predicts multiple labels for each node without revealing each client’s raw local data.</p>
+
+        <h2 class="text-xl font-bold mb-3">Graph Convolutional Network</h2>
+        <p class="mb-5">The graph convolution network (GCN) is a typical example of the family of GNNs used in this work. It performs neighborhood aggregation in every feature transformation layer, such that the prediction of a graph node is based not only on the information of this node but also that of its neighbors.</p>
+        <img src="https://source.unsplash.com/random/1200x600/?network" alt="Network" class="w-full h-64 object-cover mb-5">
+
+        <h2 class="text-xl font-bold mb-3">GLASU Algorithm</h2>
+        <p class="mb-5">GLASU is a communication-efficient algorithm that trains a graph neural network (GNN) through vertical federated learning. It adopts lazy aggregation and stale updates to skip communication in neighborhood aggregation and in model updates, respectively, greatly reducing communication while enjoying convergence guarantees.</p>
+        <img src="https://source.unsplash.com/random/1200x600/?algorithm" alt="Algorithm" class="w-full h-64 object-cover mb-5">
+
+        <h2 class="text-xl font-bold mb-3">Numerical Results</h2>
+        <p class="mb-5">Extensive experiments on real-world datasets show that GLASU effectively trains a GNN that matches the accuracy of centralized training, while using only a fraction of the time due to communication saving.</p>
+        <img src="https://source.unsplash.com/random/1200x600/?data" alt="Data" class="w-full h-64 object-cover mb-5">
+    </div>
+</body>
+</html>

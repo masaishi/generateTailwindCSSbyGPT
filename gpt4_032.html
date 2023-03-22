@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ChatGPT Character Prompts</title>
+</head>
+<body class="bg-gray-900 min-h-screen font-sans">
+
+    <header class="fixed inset-x-0 top-0 bg-gray-800 text-white py-3 px-6 space-x-4 z-10">
+        <h1 class="text-xl font-semibold">ChatGPT Character Prompts</h1>
+        <div class="flex items-center">
+            <input id="openai-key-input" type="text" placeholder="Enter OpenAI API Key"
+                class="bg-gray-200 text-black py-2 px-4 rounded-lg focus:outline-none">
+        </div>
+    </header>
+
+    <main class="mt-20">
+        <div class="grid grid-cols-2 gap-6 p-8">
+            <section class="relative">
+                <!-- Character List -->
+                <div class="relative bg-gray-800 p-4 rounded-lg overflow-y-auto">
+                    <h2 class="text-white text-lg font-semibold mb-4">Character List</h2>
+                    <ul id="character-list" class="space-y-4">
+                        <!-- JS generated character items go here -->
+                    </ul>
+                </div>
+            </section>
+            <section class="relative">
+                <!-- Chat Screen -->
+                <div class="relative bg-gray-800 text-white p-4 rounded-lg h-full">
+                    <h2 id="character-display" class="text-lg font-semibold mb-4">Select a character to chat with</h2>
+                    <div id="chat-container" class="overflow-y-auto">
+                        <!-- JS generated chat messages go here -->
+                    </div>
+                    <form id="chat-form" class="mt-4">
+                        <input id="chat-input" type="text" placeholder="Ask a question..."
+                            class="bg-gray-200 text-black w-full py-2 px-4 rounded-lg focus:outline-none">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <template id="character-item">
+        <li class="bg-gray-700 rounded-lg text-white p-4">
+            <div class="flex justify-between items-center">
+                <div class="w-32 h-32">
+                    <img src="" alt="" class="w-full h-full object-cover rounded">
+                </div>
+                <div class="w-full mx-4">
+                    <h3 class="mt-2 text-lg font-semibold"></h3>
+                    <p class="mb-1"></p>
+                    <div class="flex justify-between items-start text-sm">
+                        <span>
+                            <i class="fas fa-heart"></i> <span class="faves">0</span> faves                  
+                        </span>
+                        <span>
+                            <i class="fas fa-users"></i> <span class="followers">0</span> followers
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="edit-button bg-blue-500 p-2 rounded-lg text-white">
+                        Edit Prompt
+                    </button>
+                    <button type="button" class="fave-button bg-yellow-500 mt-2 p-2 rounded-lg text-white">
+                        Add to Favorites
+                    </button>
+                </div>
+            </div>
+        </li>
+    </template>
+    <template id="chat-message">
+        <div class="mb-2">
+            <strong></strong>: <span></span>
+        </div>
+    </template>
+
+    <script>
+        // Your custom JavaScript code goes here
+    </script>
+
+</body>
+</html>

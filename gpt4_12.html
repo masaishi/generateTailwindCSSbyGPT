@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>MediVision - Medical Image Analysis App</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 p-6">
+        <div class="container mx-auto">
+            <h1 class="text-white text-4xl font-bold">MediVision</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-16">
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Upload Your Medical Image</h2>
+            <form class="flex items-center">
+                <input type="file" class="bg-white p-2 rounded-lg border border-gray-300">
+                <button type="submit" class="bg-green-500 text-white font-bold p-2 ml-4 rounded-lg hover:bg-green-600">Analyze</button>
+            </form>
+        </section>
+
+        <section class="mt-16">
+            <h2 class="text-2xl font-bold mb-4">Results</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Segmentation</h3>
+                    <img src="#" alt="Segmentation Result" class="mx-auto mb-4">
+                    <p class="text-gray-700">Divided regions of the uploaded medical image based on GaNDLF-powered segmentation.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Regression</h3>
+                    <img src="#" alt="Regression Result" class="mx-auto mb-4">
+                    <p class="text-gray-700">Prediction of continuous values, such as image focus level, based on the uploaded medical image.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Classification</h3>
+                    <img src="#" alt="Classification Result" class="mx-auto mb-4">
+                    <p class="text-gray-700">Identified classes, such as disease type or tissue type, based on the uploaded medical image.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-500 mt-16 p-6">
+        <div class="container mx-auto">
+            <p class="text-white text-center">&copy; 2022 MediVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

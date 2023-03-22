@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+[Japanese Description]
+
+【新技術を使った素晴らしいアプリアイデア】
+
+ビジネスアイデア（1）を使用してWSNオペレーター向けの異常検出サービスを提供することができます。このアプリは、機械学習アルゴリズムを使用してWSNからのデータを分析し、異常を検出し、オペレーターに通知することができます。これは、医療や産業制御などのアプリケーションにとって特に有用であり、アプリの使いやすいデザインとともに、オペレーターが簡単にデータを監視できるように設計されています。データは、ユーザーが設定したしきい値を超えるとリアルタイムで通知されます。
+
+【アプリの素晴らしいデザイン】
+
+以下は、Tailwind CSSを使用した異常検出アプリのHTMLコードです。Tailwind CSSを使用することで、レスポンシブなデザインでアプリを設計できます。
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>WSN異常検出アプリ</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 py-4">
+        <div class="container mx-auto flex items-center justify-between px-6">
+            <h1 class="text-white font-bold text-2xl">WSN異常検出</h1>
+            <div class="flex items-center">
+                <a href="#" class="text-white font-medium mr-4 hover:text-gray-200">設定</a>
+                <a href="#" class="text-white font-medium hover:text-gray-200">ログアウト</a>
+            </div>
+        </div>
+    </header>
+    <div class="container mx-auto mt-10 px-6">
+        <h2 class="text-gray-800 text-2xl mb-4 font-bold">データの監視</h2>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-gray-800 font-medium mb-4">温度</h3>
+            <div class="flex items-center justify-between">
+                <div class="text-gray-800 font-bold text-5xl">24<span class="text-gray-700 text-2xl">℃</span></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 0C4.486 0 0 4.485 0 10s4.486 10 10 10 10-4.485 10-10S15.514 0 10 0zm4.293 7.293l-4.262 4.262-2.021-2.02a.7.7 0 0 0-.988 0 .701.701 0 0 0 0 .988l2.646 2.645a.694.694 0 0 0 .494.205.696.696 0 0 0 .494-.205l4.756-4.755a.7.7 0 0 0-.987-.987z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-gray-800 font-medium mb-4">湿度</h3>
+            <div class="flex items-center justify-between">
+                <div class="text-gray-800 font-bold text-5xl">60<span class="text-gray-700 text-2xl">%</span></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 0C4.486 0 0 4.485 0 10s4.486 10 10 10 10-4.485 10-10S15.514 0 10 0zm4.293 7.293l-4.262 4.262-2.021-2.02a.7.7 0 0 0-.988 0 .701.701 0 0 0 0 .988l2.646 2.645a.694.694 0 0 0 .494.205.696.696 0 0 0 .494-.205l4.756-4.755a.7.7 0 0 0-.987-.987z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-gray-800 font-medium mb-4">電圧</h3>
+            <div class="flex items-center justify-between">
+                <div class="text-gray-800 font-bold text-5xl">35<span class="text-gray-700 text-2xl">V</span></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 0C4.486 0 0 4.485 0 10s4.486 10 10 10 10-4.485 10-10S15.514 0 10 0zm4.293 7.293l-4.262 4.262-2.021-2.02a.7.7 0 0 0-.988 0 .701.701 0 0 0 0 .988l2.646 2.645a.694.694 0 0 0 .494.205.696.696 0 0 0 .494-.205l4.756-4.755a.7.7 0 0 0-.987-.987z"/>
+                </svg>
+            </div>
+        </div>
+        <h2 class="text-gray-800 text-2xl mb-4 font-bold">異常検出</h2>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-gray-800 font-medium mb-4">最近の異常</h3>
+            <ul>
+                <li class="text-gray-700 mb-2">
+                    <span class="text-red-600 mr-2">&#10005;</span>
+                    温度が30℃を超えました
+                </li>
+                <li class="text-gray-700 mb-2">
+                    <span class="text-red-600 mr-2">&#10005;</span>
+                    電圧が20Vを下回りました
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
