@@ -100,15 +100,10 @@ When creating a page, if text information is missing, write additional text.
 - **[codex_06.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/codex_06.html)**
 
 ## Use GPT-4
-- **[gpt4_01.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_01.html)**
-- **[gpt4_02.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_02.html)**
-- **[gpt4_04.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_04.html)**
-- **[gpt4_05.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_05.html)**
 - **[gpt4_06.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_06.html)**
 - **[gpt4_07.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_07.html)**
 - **[gpt4_08.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_08.html)**
 - **[gpt4_09.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_09.html)**
-- **[gpt4_09_ja.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_09_ja.html)**
 
 - **[gpt4_032.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_032.html)**
 - **[gpt4_034.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_034.html)**
@@ -127,6 +122,7 @@ When creating a page, if text information is missing, write additional text.
 - **[gpt4_02_ja.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_02_ja.html)**
 - **[gpt4_03_ja.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_03_ja.html)**
 - **[gpt4_05_ja.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_05_ja.html)**
+- **[gpt4_09_ja.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_09_ja.html)**
 - **[gpt4_09_ja_translate.html](https://masaishi.github.io/generateTailwindCSSbyGPT/pages/gpt4_09_ja_translate.html)**
 
 
